@@ -1,1 +1,14 @@
 term_iri,comments,organized_in,abcd_equivalence,flags
+http://rs.tdwg.org/dwc/terms/Chronology,,,,extension
+http://rs.tdwg.org/dwc/terms/chronologyID,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/maximumAge,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/maximumAgeUnits,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/minimumAge,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/minimumAgeUnits,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/ageUncertainty,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/ageUncertaintyMethod,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/materialDated,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/materialDatedID,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/chronologyProtocol,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/chronologyRemarks,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/chronologyReferences,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
