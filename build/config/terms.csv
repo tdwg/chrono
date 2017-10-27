@@ -1,6 +1,6 @@
 term_iri,comments,organized_in,abcd_equivalence,flags
 http://rs.tdwg.org/dwc/terms/Chronology,,,,extension
-http://rs.tdwg.org/dwc/terms/chronologyID,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/chronologyID,May be a global unique identifier or an identifier specific to the data set.,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/maximumAge,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/maximumAgeUnits,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/minimumAge,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
