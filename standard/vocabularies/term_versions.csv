@@ -1,1 +1,13 @@
 label,issued,status,term_iri,iri,replaces,rdf_type,definition
+chronologyID,,,,,,,
+maximumAge,,,,,,,
+maximumAgeUnits,,,,,,,
+minimumAge,,,,,,,
+minimumAgeUnits,,,,,,,
+ageUncertainty,,,,,,,
+ageUncertaintyMethod,,,,,,,
+materialDated,,,,,,,
+materialDatedID,,,,,,,
+chronologyProtocol,,,,,,,
+chronologyRemarks,,,,,,,
+chronologyReferences,,,,,,,
