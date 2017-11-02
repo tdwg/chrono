@@ -1,6 +1,6 @@
 term_iri,comments,organized_in,abcd_equivalence,flags
-http://rs.tdwg.org/dwc/terms/Chronology,,,,extension
-http://rs.tdwg.org/dwc/terms/chronologyID,May be a global unique identifier or an identifier specific to the data set.,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/ChronometricDate,,,,extension
+http://rs.tdwg.org/dwc/terms/chronometricDateID,May be a global unique identifier or an identifier specific to the data set.,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/maximumAge,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/maximumAgeUnits,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/minimumAge,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
@@ -9,6 +9,6 @@ http://rs.tdwg.org/dwc/terms/ageUncertainty,,http://rs.tdwg.org/dwc/terms/Chrono
 http://rs.tdwg.org/dwc/terms/ageUncertaintyMethod,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/materialDated,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
 http://rs.tdwg.org/dwc/terms/materialDatedID,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
-http://rs.tdwg.org/dwc/terms/chronologyProtocol,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
-http://rs.tdwg.org/dwc/terms/chronologyRemarks,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
-http://rs.tdwg.org/dwc/terms/chronologyReferences,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/chronometricDateProtocol,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/chronometricDateRemarks,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
+http://rs.tdwg.org/dwc/terms/chronometricDateReferences,,http://rs.tdwg.org/dwc/terms/Chronology,,extension
