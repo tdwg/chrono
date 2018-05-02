@@ -1,16 +1,17 @@
 term_iri,comments,organized_in,abcd_equivalence,flags
 http://zooarchnet.org/dwc/terms/ChronometricDate,,,,extension
 http://zooarchnet.org/dwc/terms/chronometricDateID,May be a global unique identifier or an identifier specific to the data set.,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/reportedAge,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/reportedAgeConversionProtocol,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/maximumAge,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/maximumAgeReferenceSystem,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/minimumAge,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/minimumAgeReferenceSystem,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/ageUncertaintyInYears,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/ageUncertaintyMethod,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/verbatimChronometricAge,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/verbatimChronometricAgeConversionProtocol,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/maximumChronometricAge,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/maximumChronometricAgeReferenceSystem,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/minimumChonometricAge,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/minimumChronometricAgeReferenceSystem,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyInYears,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyMethod,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
 http://zooarchnet.org/dwc/terms/materialDated,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
 http://zooarchnet.org/dwc/terms/materialDatedID,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
 http://zooarchnet.org/dwc/terms/chronometricDateProtocol,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/chronometricDateReferences,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extensionhttp://zooarchnet.org/dwc/terms/chronometricDateRemarks,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/chronometricDateReferences,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/chronometricDateRemarks,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
 http://zooarchnet.org/dwc/terms/chronometricDateRemarks,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
