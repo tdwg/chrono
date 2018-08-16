@@ -1,16 +1,16 @@
 term_iri,comments,organized_in,abcd_equivalence,flags
-http://zooarchnet.org/dwc/terms/ChronometricDate,,,,extension
-http://zooarchnet.org/dwc/terms/chronometricDateID,GUID reference to the combination of information for one ChronometricDate.,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/verbatimChronometricAge,27 BC to 14 AD,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/verbatimChronometricAgeConversionProtocol,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/maximumChronometricAge,27,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/maximumChronometricAgeReferenceSystem,'"kya", "mya", "BP", "AD", "BCE"',http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/minimumChronometricAge,14,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/minimumChronometricAgeReferenceSystem,'"kya", "mya", "BP", "AD", "BCE"',http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyInYears,100,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyMethod,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/materialDated,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/materialDatedID,'If the material dated is not the sample itself (or even to clarify if it is), an identifier can be given.',http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/chronometricDateProtocol,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/chronometricDateReferences,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
-http://zooarchnet.org/dwc/terms/chronometricDateRemarks,,http://zooarchnet.org/dwc/terms/ChronometricDate,,extension
+http://zooarchnet.org/dwc/terms/ChronometricAge,,,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeID,GUID reference to the combination of information for one ChronometricAge.,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/verbatimChronometricAge,27 BC to 14 AD,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/verbatimChronometricAgeConversionProtocol,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/maximumChronometricAge,27,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/maximumChronometricAgeReferenceSystem,'"kya", "mya", "BP", "AD", "BCE"',http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/minimumChronometricAge,14,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/minimumChronometricAgeReferenceSystem,'"kya", "mya", "BP", "AD", "BCE"',http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyInYears,100,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyMethod,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/materialDated,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/materialDatedID,'If the material dated is not the sample itself (or even to clarify if it is), an identifier can be given.',http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeProtocol,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeReferences,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/chronometricAgeRemarks,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
