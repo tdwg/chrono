@@ -6,7 +6,7 @@ http://zooarchnet.org/dwc/terms/verbatimChronometricAgeConversionProtocol,,http:
 http://zooarchnet.org/dwc/terms/maximumChronometricAge,27,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/maximumChronometricAgeReferenceSystem,"'kya', 'mya', 'BP', 'AD', 'BCE'",http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/minimumChronometricAge,14,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
-http://zooarchnet.org/dwc/terms/minimumChronometricAgeReferenceSystem,'"kya", "mya", "BP", "AD", "BCE"',http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/minimumChronometricAgeReferenceSystem,"'kya', 'mya', 'BP', 'AD', 'BCE'",http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyInYears,100,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyMethod,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/materialDated,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
