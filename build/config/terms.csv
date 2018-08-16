@@ -4,7 +4,7 @@ http://zooarchnet.org/dwc/terms/chronometricAgeID,GUID reference to the combinat
 http://zooarchnet.org/dwc/terms/verbatimChronometricAge,27 BC to 14 AD,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/verbatimChronometricAgeConversionProtocol,,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/maximumChronometricAge,27,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
-http://zooarchnet.org/dwc/terms/maximumChronometricAgeReferenceSystem,'"kya", "mya", "BP", "AD", "BCE"',http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
+http://zooarchnet.org/dwc/terms/maximumChronometricAgeReferenceSystem,"'kya', 'mya', 'BP', 'AD', 'BCE'",http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/minimumChronometricAge,14,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/minimumChronometricAgeReferenceSystem,'"kya", "mya", "BP", "AD", "BCE"',http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
 http://zooarchnet.org/dwc/terms/chronometricAgeUncertaintyInYears,100,http://zooarchnet.org/dwc/terms/ChronometricAge,,extension
