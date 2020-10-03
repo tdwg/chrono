@@ -1,7 +1,8 @@
 #
-# S. Van Hoey
+# S. Van Hoey, John Wieczorek
 #
-# Build script for tdwg dwc handling
+# Build script for document handling
+# Based on https://github.com/tdwg/dwc/blob/master/build/build.py
 #
 
 import io
@@ -15,10 +16,9 @@ from urllib import request
 from jinja2 import FileSystemLoader, Environment
 
 NAMESPACES = {
-    'http://rs.tdwg.org/dwc/iri/' : 'dwciri',
-    'http://rs.tdwg.org/dwc/terms/' : 'dwc',
-    'http://purl.org/dc/elements/1.1/' : 'dc',
-    'http://purl.org/dc/terms/' : 'dcterms',
+    'http://zooarchnet.org/dwc/terms/' : 'zooarchnet',
+    'http://rs.tdwg.org/chrono/iri/' : 'chronoiri',
+    'http://rs.tdwg.org/chrono/terms/' : 'chrono',
     'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
 
 
@@ -125,6 +125,7 @@ class DwcDigester(object):
             valid key of the NAMESPACES variable
         """
         if namespace not in NAMESPACES.keys():
+            print("namespace url: %s", namespace)
             raise DwcNamespaceError("The namespace url is currently not supported in NAMESPACES")
         return NAMESPACES[namespace]
 
@@ -301,7 +302,7 @@ def main():
     my_dwc = DwcDigester(term_versions_file)
     print("Building quick reference guide")
     my_dwc.create_html()
-    print("Building simple DwC CSV files")
+    print("Building simple CSV files")
     my_dwc.create_dwc_list()
     my_dwc.create_dwc_header()
     print("Done!")
