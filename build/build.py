@@ -263,12 +263,13 @@ class DwcDigester(object):
         properties = []
         for term in self.versions():
             term_data = self.get_term_definition(term['term_iri'])
-            if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
-                term["flags"] == "simple"):
+#            if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
+#                term["flags"] == "simple"):
+            if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"):
                 properties.append(term_data["label"])
         return properties
 
-    def create_dwc_list(self, file_output="../dist/simple_dwc_vertical.csv"):
+    def create_dwc_list(self, file_output="../dist/simple_chrono_vertical.csv"):
         """Build a list of simple dwc terms and write it to file
 
         Parameters
@@ -280,7 +281,7 @@ class DwcDigester(object):
             for term in self.simple_dwc_terms():
                 dwc_list_file.write(term + "\n")
 
-    def create_dwc_header(self, file_output="../dist/simple_dwc_horizontal.csv"):
+    def create_dwc_header(self, file_output="../dist/simple_chrono_horizontal.csv"):
         """Build a header of simple dwc terms and write it to file
 
         Parameters
