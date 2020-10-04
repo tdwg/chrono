@@ -5,11 +5,10 @@
 import pandas as pd
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/chronometric/'
 
 # This is a Python list of the database names of the term version lists to be included in the document.
-#term_lists = ['iri']
-term_lists = ['terms', 'iri', 'dc-for-dwc', 'dcterms-for-dwc', 'curatorial', 'dwcore', 'dwctype', 'geospatial']
+term_lists = ['chronometricage']
 
 column_mappings = [
     {'norm': 'iri', 'accum': 'version'},
@@ -55,40 +54,6 @@ for term_list_index in range(len(term_lists)):
         # append subsequent term lists data to the DataFrame
         accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
         
-# Special procedure for obsolete terms
-# Retrieve versions metadata
-versions_url = github_baseUri + 'dwc-obsolete-versions/dwc-obsolete-versions.csv'
-print(versions_url)
-versions_df = pd.read_csv(versions_url, na_filter=False)
-
-# Retrieve term/version join data
-join_url = github_baseUri + 'dwc-obsolete/dwc-obsolete-versions.csv'
-join_df = pd.read_csv(join_url, na_filter=False)
-
-# Find the term IRI for each version and add it to a list
-term_iri_list = []
-for row_index,row in versions_df.iterrows():
-    for join_index,join_row in join_df.iterrows():
-        # Locate the row in the join data where the version matches the row in the versions DataFrame
-        if join_row['version'] == row['version']:
-            term_iri_list.append(join_row['term'])
-            break
-'''    
-    # Locate the row in the join data where the version matches the row in the versions DataFrame
-    term_iri_row = join_df.loc[join_df['version'] == row['version']]
-    # Add the current term IRI from the join data row to the list
-    term_iri_list.append(term_iri_row['term'])
-'''
-# Add the curren term IRI list to the DataFrame as the term_iri column
-versions_df['term_iri'] = term_iri_list
-# Add the obsolete terms DataFrame to the accumulated DataFrame
-accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
-
-accumulated_frame.reset_index(drop=True, inplace=True) # reset the row indices to consecutive starting with zero
-accumulated_frame.fillna('', inplace=True) # replace all missing values with empty strings
-accumulated_frame.head()
-print()
-
 # -----------------------------
 # Create a list of lists building each row of the normative document
 # -----------------------------
@@ -119,30 +84,12 @@ for row_index,row in accumulated_frame.iterrows():
             normative_doc_row.append(row[column_mapping['accum']])
     normative_doc_list.append(normative_doc_row)
 
-# special handling for http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI. Eventually we want to eliminate this.
-use_with_iri_row = ['http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI-2017-10-06',
-  'UseWithIRI',
-  'UseWithIRI',
-  'The category of terms that are recommended to have an IRI as a value.',
-  'A utility class to organize the dwciri: terms.',
-  '',
-  'http://www.w3.org/2000/01/rdf-schema#Class',
-  '2017-10-06',
-  'recommended',
-  '',
-  'http://www.w3.org/2000/01/rdf-schema#Class',
-  'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI',
-  'not in ABCD',
-  '']
-normative_doc_list.append(use_with_iri_row)
-
 # Turn list of lists into dataframe
 normative_doc_df = pd.DataFrame(normative_doc_list, columns = column_headers)
 # Set the row label as the version IRI
 normative_doc_df.set_index('iri', drop=False, inplace=True)
 normative_doc_df.index.names = ['row_index']
 #normative_doc_df.to_csv('test.csv', index = False)
-string1 = normative_doc_df.iloc[571]['term_iri']
 
 # -----------------------------
 # Order the rows as required for generating the Quick Reference Guide
