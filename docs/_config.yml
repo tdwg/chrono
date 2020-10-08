@@ -1,0 +1,17 @@
+# SITE SETTINGS
+title: Chronometric Age Extension
+# description: 
+url: "https://tdwg.github.io/chrono"
+navbar:
+  left:
+  - text: Terms
+    href: terms/
+  right:
+  - text: GitHub
+    href: https://github.com/tdwg/chrono
+
+# BUILD SETTINGS
+markdown: kramdown
+remote_theme: tdwg/tdwg-theme-jekyll
+plugins:
+  - jekyll-feed
