@@ -1,7 +1,7 @@
 # SITE SETTINGS
 title: Chronometric Age Extension
 # description: 
-url: "https://tdwg.github.io/chrono"
+# url: "https://chrono.tdwg.org/"
 navbar:
   left:
   - text: Terms
