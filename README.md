@@ -23,7 +23,7 @@ The repository structure is described below. Files/directories indicated with `G
 
 ```
 ├── .github
-│   ├── CONTRIBUTING.md       : Guide on how to contribute
+│   └── CONTRIBUTING.md       : Guide on how to contribute
 │
 ├── build
 │   ├── README.md                 : Workflow for generating a new version of the vocabulary
@@ -44,14 +44,13 @@ The repository structure is described below. Files/directories indicated with `G
 ├── docs
 │   └── terms
 │   │   └── index.md      : Content for Quick Reference Guide generation using Jekyll
-│   │
 │   ├── _config.yml       : Jekyll site configuration for Quick Reference Guide
 │   └── index.md          : Header for Quick Reference Guide generation using Jekyll
 │
 ├── vocabulary
 │   └── term_versions.csv : Chronometric Age term versions, contains the complete history of the terms
 │
-└── .gitignore            : Files and directories to be ignored by git
+├── .gitignore            : Files and directories to be ignored by git
 ├── LICENSE               : Repository license
 └── README.md             : Description of this repository
 ```
