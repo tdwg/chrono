@@ -4,14 +4,17 @@ The Chronometric Age extension is a vocabulary maintained by the [Darwin Core Ma
 
 ## Getting started
 
-[Chronometric Age Extension quick reference guide](https://chrono.tdwg.org/terms/)
+[Chronometric Age Extension quick reference guide](https://tdwg.github.io/chrono/terms/)
+[//]: # '[Chronometric Age Extension quick reference guide](https://chrono.tdwg.org/terms/)'
 
 Documents:
 
-* [List of terms document](https://chrono.tdwg.org/list/): Comprehensive metadata for current and obsolete terms in human readable form 
+* [List of terms document](https://tdwg.github.io/chrono/list/): Comprehensive metadata for current and obsolete terms in human readable form
+[//]: # '* [List of terms document](https://chrono.tdwg.org/list/): Comprehensive metadata for current and obsolete terms in human readable form'
 * [Complete term history table](vocabulary/term_versions.csv): A CSV file with the full version history of Chronometric Age terms
 * [Distribution documents](dist/): Simple CSV files to start using Chronomtric Ages
-* [Website documents](docs/): Markdown files that form the source for the [Chronometric Age Extension website](https://chrono.tdwg.org/)
+* [Website documents](docs/): Markdown files that form the source for the [Chronometric Age Extension website](https://tdwg.github.io/chrono)
+[//]: # '* [Website documents](docs/): Markdown files that form the source for the [Chronometric Age Extension website](https://chrono.tdwg.org/)'
 
 Community:
 
