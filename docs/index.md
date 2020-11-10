@@ -13,5 +13,5 @@ The Chronometric Age extension is a standard vocabulary maintained by the [Darwi
 * [Quick reference guide](terms/)
 * Usage guides: how to use the Chronometric Age Extension
 * [GitHub repository](https://github.com/tdwg/chrono): where the Chronometric Age Extensions is maintained
-* [Normative term list](https://github.com/tdwg/chrono/tree/master/docs/list): the document containing the full history of normative Darwin Core term definitions
+* [Normative term list](https://github.com/tdwg/chrono/tree/master/docs/list/index.md): the document containing the full history of normative Darwin Core term definitions
 * [Distribution files](https://github.com/tdwg/chrono/tree/master/dist): convenient files to start using Darwin Core

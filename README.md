@@ -48,6 +48,8 @@ The repository structure is described below. Files/directories indicated with `G
 │   └── terms
 │   │   └── index.md      : Content for Quick Reference Guide generation using Jekyll
 │   ├── _config.yml       : Jekyll site configuration for Quick Reference Guide
+│   ├── list
+│   │   └── index.md      : Content for Term list document generation using Jekyll
 │   └── index.md          : Header for Quick Reference Guide generation using Jekyll
 │
 ├── vocabulary

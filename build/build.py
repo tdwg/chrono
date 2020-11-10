@@ -200,24 +200,26 @@ class DwcDigester(object):
             ]
         """
         template_data = []
-        in_class = "Record-level"
+#        in_class = "Record-level"
         # sequence matters in config and it starts with Record-level which we populate here ad-hoc
-        class_group = {}
-        class_group["label"] = "Record-level"
-        class_group["iri"] = None
-        class_group["class"] = None
-        class_group["definition"] = None
-        class_group["comments"] = None
-        class_group["rdf_type"] = None
-        class_group["terms"] = []
-        class_group["namespace"] = None
+        class_group = None
+#        class_group = {}
+#        class_group["label"] = "Record-level"
+#        class_group["iri"] = None
+#        class_group["class"] = None
+#        class_group["definition"] = None
+#        class_group["comments"] = None
+#        class_group["rdf_type"] = None
+#        class_group["terms"] = []
+#       class_group["namespace"] = None
 
         for term in self.versions(): # sequence of the terms file used as order
             term_data = self.get_term_definition(term['term_iri'])
             # new class encountered
             if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
                 # store previous section in template_data
-                template_data.append(class_group)
+                if class_group is not None:
+                    template_data.append(class_group)
                 #start new class group
                 class_group = term_data
                 class_group["terms"] = []
