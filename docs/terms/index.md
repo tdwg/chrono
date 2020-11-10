@@ -4,16 +4,9 @@ container: fluid
 
 # Chronometric Age quick reference guide
 
-This document is intended to be an easy-to-read reference of the currently recommended terms maintained as part of the [Chronometric Age standard](https://www.tdwg.org/standards/chrono/). This page itself is not part of the standard. It draws on the term names and definitions from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. The category `ChronometricAge corresponds to the parent class, which is a special category term used to group the rest of the terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). [Files with lists of these terms](https://github.com/tdwg/chrono/tree/master/dist) and [their full history](https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv) can be found in the [Chronometric Age repository](https://github.com/tdwg/chrono).
+NOTE: This document forms part of a proposal by the [Chronometric Age Extension Task Group](https://www.tdwg.org/community/esp/chrono/) to extend Darwin Core with vocabulary for chronometric ages. It is not yet ratified and may change as a result of recommendations received during the course of Open Public Commentary.
 
-
-## Record-level
-
-<div class="my-4">
-    </div>
-
-
-
+This document is intended to be an easy-to-read reference for the currently recommended terms of the [Chronometric Age Extension](https://tdwg.github.io/chrono/) maintained by the [Darwin Core Maintenance Interest Group](https://www.tdwg.org/standards/dwc/#maintenance%20group). This page itself is not part of the standard. It draws on the term names and definitions from the [normative part of the standard](../list/) and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. The category `ChronometricAge` corresponds to the parent class, which is a special category term used to group the rest of the terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). [Files with lists of these terms](https://github.com/tdwg/chrono/tree/master/dist) and [their full history](https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv) can be found in the [Chronometric Age repository](https://github.com/tdwg/chrono).
 
 ## ChronometricAge
 

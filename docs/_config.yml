@@ -1,6 +1,6 @@
 # SITE SETTINGS
 title: Chronometric Age Extension
-# description: 
+description: Vocabulary maintained by the Darwin Core Maintenance Interest Group to facilitate the sharing of information about chronometric ages and the techniques used to determine them.
 # url: "https://chrono.tdwg.org/"
 navbar:
   left:
