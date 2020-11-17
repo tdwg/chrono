@@ -1,30 +1,40 @@
-# Chronometric Age Vocabulary
+# Chronometric Age Vocabulary List of Terms
 
-**Title:**  Chronometric Age Vocabulary
+Title
+: Chronometric Age Vocabulary List of Terms
 
-**Namespace URI:** http://rs.tdwg.org/chrono/terms/
+Namespace IRI:
+: http://rs.tdwg.org/chrono/terms/
 
-**Preferred namespace abbreviation:** chrono:
+Preferred namespace abbreviation
+: chrono:
 
-**Date version issued:** 2020-MM-DD - put ratification date here
+Date version issued
+: 2020-MM-DD - put ratification date here
 
-**Date created:** 2020-MM-DD - put ratification date here
+Date created
+: 2020-MM-DD - put ratification date here
 
-**Part of TDWG Standard:** http://www.tdwg.org/standards/x
+Part of TDWG Standard
+: <http://www.tdwg.org/standards/450>
 
-**This version:** http://rs.tdwg.org/chrono/doc/list/iso-date-here
+This version
+: <http://rs.tdwg.org/dwc/doc/chrono/iso-date-here>
 
-**Latest version:** http://rs.tdwg.org/chrono/doc/list/
+Latest version
+: <http://rs.tdwg.org/dwc/doc/chrono/>
 
-**Previous version:** http://rs.tdwg.org/chrono/doc/list/2020-09-14
+Abstract
+: The Chronometric Age Vocabulary is standard for transmitting information about chronometric ages and the techniques used to determine them. This document lists all terms in namespaces currently used in the vocabulary.
 
-**Abstract:** The Chronometric Age Vocabulary is standard for transmitting information about chronometric ages and the techniques used to determine them. This document lists all terms in namespaces currently used in the vocabulary.
+Contributors
+: John Wieczorek, Laura Brenskelle, Robert Guralnick, Kitty Emery, Michelle LeFebvre, Neill Wallis, Steve Baskauf, Marie Elise Lecoq, Eric Kansa, Sarah Kansa, Denné Reed
 
-**Contributors:** John Wieczorek, Laura Brenskelle, Robert Guralnick, Kitty Emery, Michelle LeFebvre, Neill Wallis, Steve Baskauf, Marie Elise Lecoq, Eric Kansa, Sarah Kansa, Denné Reed
+Creator
+: TDWG Darwin Core Chronometric Age Extension Task Group
 
-**Creator:** TDWG Darwin Core Chronometric Age Extension Task Group
-
-**Bibliographic citation:** TDWG Darwin Core Chronometric Age Extension Task Group. 2020. Chronometric Age Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/chrono/doc/list/iso-date-here>
+Bibliographic citation
+: TDWG Darwin Core Chronometric Age Extension Task Group. 2020. Chronometric Age Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/chrono/iso-date-here>
 
 
 ## 1 Introduction
@@ -853,4 +863,5 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 	</tbody>
 </table>
+
 
