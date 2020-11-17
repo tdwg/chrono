@@ -79,11 +79,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2020-09-14">http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2020-11-17">http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -96,6 +96,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Notes</td>
 			<td>This is a categorical term (class) to organize the other chronometric age properties and does not ever have values.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-RadiometricDates">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-RadiometricDates</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -117,11 +121,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2020-09-14">http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -138,6 +142,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`INTCAL13`, `sequential 6 phase Bayesian model and IntCal13 calibration`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -159,11 +167,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-05</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2020-10-05">http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2020-10-05</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -180,6 +188,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`Michelle LeFebvre | Niell Wallis`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Identifiers">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Identifiers</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -201,11 +213,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-10-05</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedDate-2020-10-05">http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedDate-2020-10-05</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedDate-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedDate-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -222,6 +234,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971).</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-RadiometricDate-AnalysisDateTime">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-RadiometricDate-AnalysisDateTime</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -262,6 +278,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>May be a global unique identifier or an identifier specific to the dataset. This can be used to link this record to another repository where more information about the dataset is shared.</td>
 		</tr>
 		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
@@ -281,11 +301,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeProtocol-2020-09-14">http://rs.tdwg.org/chrono/terms/version/chronometricAgeProtocol-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeProtocol-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeProtocol-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -298,6 +318,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`radiocarbon AMS`, `K-Ar dates for the lower most marker tuff`, `historic documentation`, `ceramic seriation`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -319,11 +343,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeReferences-2020-09-14">http://rs.tdwg.org/chrono/terms/version/chronometricAgeReferences-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeReferences-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeReferences-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -340,6 +364,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`Pluckhahn, Thomas J., Neill J. Wallis, and Victor D. Thompson. 2020  The History and Future of Migrationist Explanation in the Archaeology of the Eastern Woodlands: A Review and Case Study of the Woodland Period Gulf Coast. Journal of Archaeological Research. <a href="https://doi.org/10.1007/s10814-019-09140-x`">https://doi.org/10.1007/s10814-019-09140-x`</a></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-MeasurementOrFactReference">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-MeasurementOrFactReference</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -361,11 +389,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeRemarks-2020-09-14">http://rs.tdwg.org/chrono/terms/version/chronometricAgeRemarks-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeRemarks-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeRemarks-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -378,6 +406,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-DatingComment">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-DatingComment</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -399,11 +431,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2020-09-14">http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -420,6 +452,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`100`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-Accuracy">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-Accuracy</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -441,11 +477,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyMethod-2020-09-14">http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyMethod-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyMethod-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyMethod-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -458,6 +494,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`2-sigma calibrated range`, `Half of 95% confidence interval`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -479,11 +519,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/materialDated-2020-09-14">http://rs.tdwg.org/chrono/terms/version/materialDated-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/materialDated-2020-11-17">http://rs.tdwg.org/chrono/terms/version/materialDated-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -496,6 +536,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`Double Tuff`, `Charcoal found in Stratum V`, `charred wood`, `tooth`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-MaterialDated">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-MaterialDated</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -536,6 +580,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>`dwc:occurrenceID: 702b306d-f167-44d0-a5c9-890ece2b8839`, `<a href="https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`">https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`</a></td>
 		</tr>
 		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
@@ -555,11 +603,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-09-14">http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-11-17">http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -576,6 +624,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`27`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-UpperValue">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-UpperValue</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -597,11 +649,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-09-14">http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-11-17">http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -614,6 +666,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`kya`,`mya`,`BP`,`AD`,`BCE`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-TimeUnit">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-TimeUnit</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -635,11 +691,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-09-14">http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-11-17">http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -656,6 +712,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`100`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-LowerValue">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-LowerValue</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -677,11 +737,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-11-17</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-09-14">http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-11-17">http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-11-17</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -694,6 +754,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`kya`,`mya`,`BP`,`AD`,`BCE`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-TimeUnit">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-TimeUnit</a></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -732,6 +796,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`1510 +/- 25 14C yr BP`, `16.26 Ma +/- 0.016`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -776,10 +844,13 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>`27 BC to 14 AD`, `stratigraphically pre-1104`</td>
 		</tr>
 		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
-
 
