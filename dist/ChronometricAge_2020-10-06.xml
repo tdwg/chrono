@@ -10,7 +10,7 @@
     name="ChronometricAge"
     namespace="http://rs.tdwg.org/chrono/terms/"
     rowType="http://rs.tdwg.org/chrono/terms/ChronometricAge"
-    dc:issued="2020-10-06"
+    dc:issued="2020-11-19"
     dc:description="Extension to Occurrence Core to capture chronometric age information."
     dc:relation="https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv"
     dc:subject="dwc:Occurrence">
@@ -35,7 +35,7 @@
     <property
         name='chronometricAgeProtocol'
         namespace='http://rs.tdwg.org/chrono/terms/'
-        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeConversionProtocol'
+        qualName='http://rs.tdwg.org/chrono/terms/chronometricAgeProtocol'
         dc:description='A description of or reference to the methods used to determine the chronometric age.'
         examples='`radiocarbon AMS`, `K-Ar dates for the lower most marker tuff`, `historic documentation`, `ceramic seriation`'
         type="string"
