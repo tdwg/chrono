@@ -54,8 +54,8 @@ class DwcBuildReader():
 
 class DwcDigester(object):
 
-    def __init__(self, term_versions):
-        """Digest the term document of Darwin Core to support automatic
+    def __init__(self, term_versions, qrg_term_versions):
+        """Digest the term and qrg documents of Darwin Core to support automatic
         generation of derivatives
 
         Parameters
@@ -63,6 +63,9 @@ class DwcDigester(object):
         term_versions : str
             Either a relative path and filename of the normative Dwc document
             or a URL link to the raw Github version of the file
+        qrg_term_versions : str
+            Either a relative path and filename of the Quick Reference Guide term order 
+            document or a URL link to the raw Github version of the file
 
         Notes
         -----
@@ -71,6 +74,7 @@ class DwcDigester(object):
         (mainly the index.html)
         """
         self.term_versions = term_versions
+        self.qrg_term_versions = qrg_term_versions
 
         self.term_versions_data = {}
         self._store_versions()
@@ -86,6 +90,13 @@ class DwcDigester(object):
             for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
                 if vterm["status"] == "recommended":
                     yield vterm
+
+    def qrg_versions(self):
+        """Iterator providing the terms as represented in the Quick Reference Guide list
+        """
+        with DwcBuildReader(self.qrg_term_versions) as versions:
+            for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
+                yield vterm['recommended_term_iri'].rpartition('/')[-1]
 
     def _store_versions(self):
         """Collect all the versions data in a dictionary as the
@@ -271,6 +282,14 @@ class DwcDigester(object):
                 properties.append(term_data["label"])
         return properties
 
+    def qrg_terms(self):
+        """Only extract those terms that are in the qrg list
+        """
+        properties = []
+        for term in self.qrg_versions():
+            properties.append(term)
+        return properties
+
     def create_dwc_list(self, file_output="../dist/simple_chrono_vertical.csv"):
         """Build a list of simple dwc terms and write it to file
 
@@ -280,7 +299,7 @@ class DwcDigester(object):
             relative path and filename to write the resulting list
         """
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
-            for term in self.simple_dwc_terms():
+            for term in self.qrg_terms():
                 dwc_list_file.write(term + "\n")
 
     def create_dwc_header(self, file_output="../dist/simple_chrono_horizontal.csv"):
@@ -292,7 +311,7 @@ class DwcDigester(object):
             relative path and filename to write the resulting list
         """
         with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
-            properties = self.simple_dwc_terms()
+            properties = self.qrg_terms()
             dwc_header_file.write(",".join(properties))
             dwc_header_file.write("\n")
 
@@ -300,9 +319,10 @@ def main():
     """Building up the quick reference html and derivatives"""
 
     term_versions_file = "../vocabulary/term_versions.csv"
+    qrg_term_versions_file = "./qrg-list.csv"
 
     print("Running build process:")
-    my_dwc = DwcDigester(term_versions_file)
+    my_dwc = DwcDigester(term_versions_file, qrg_term_versions_file)
     print("Building quick reference guide")
     my_dwc.create_html()
     print("Building simple CSV files")
