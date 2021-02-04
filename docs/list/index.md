@@ -54,9 +54,59 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 The terms in this standard are meant to provide stable definitions that can be used in a variety of contexts, but were envisioned principally to function together as an extension to Darwin Core, where each core record may be annotated by one or more chronometric ages.
 
-## 3 Term index
+## 3 Term index### 3.1 Index By Term Name
 
-[Chronometric Age](#chrono_ChronometricAge) |
+(See also [3.2 Index By Label](#32-index-by-label))
+
+**Classes**
+
+[chrono:ChronometricAge](#chrono_ChronometricAge) 
+
+**Chronometric Age**
+
+[chrono:chronometricAgeConversionProtocol](#chrono_chronometricAgeConversionProtocol) |
+[chrono:chronometricAgeDeterminedBy](#chrono_chronometricAgeDeterminedBy) |
+[chrono:chronometricAgeDeterminedDate](#chrono_chronometricAgeDeterminedDate) |
+[chrono:chronometricAgeID](#chrono_chronometricAgeID) |
+[chrono:chronometricAgeProtocol](#chrono_chronometricAgeProtocol) |
+[chrono:chronometricAgeReferences](#chrono_chronometricAgeReferences) |
+[chrono:chronometricAgeRemarks](#chrono_chronometricAgeRemarks) |
+[chrono:chronometricAgeUncertaintyInYears](#chrono_chronometricAgeUncertaintyInYears) |
+[chrono:chronometricAgeUncertaintyMethod](#chrono_chronometricAgeUncertaintyMethod) |
+[chrono:earliestChronometricAge](#chrono_earliestChronometricAge) |
+[chrono:earliestChronometricAgeReferenceSystem](#chrono_earliestChronometricAgeReferenceSystem) |
+[chrono:latestChronometricAge](#chrono_latestChronometricAge) |
+[chrono:latestChronometricAgeReferenceSystem](#chrono_latestChronometricAgeReferenceSystem) |
+[chrono:materialDated](#chrono_materialDated) |
+[chrono:materialDatedID](#chrono_materialDatedID) |
+[chrono:materialDatedRelationship](#chrono_materialDatedRelationship) |
+[chrono:maximumChronometricAge](#chrono_maximumChronometricAge) |
+[chrono:maximumChronometricAgeReferenceSystem](#chrono_maximumChronometricAgeReferenceSystem) |
+[chrono:minimumChronometricAge](#chrono_minimumChronometricAge) |
+[chrono:minimumChronometricAgeReferenceSystem](#chrono_minimumChronometricAgeReferenceSystem) |
+[chrono:uncalibratedChronometricAge](#chrono_uncalibratedChronometricAge) |
+[chrono:verbatimChronometricAge](#chrono_verbatimChronometricAge) 
+
+**IRI-value terms**
+
+[chronoiri:chronometricAgeConversionProtocol](#chronoiri_chronometricAgeConversionProtocol) |
+[chronoiri:chronometricAgeDeterminedBy](#chronoiri_chronometricAgeDeterminedBy) |
+[chronoiri:chronometricAgeProtocol](#chronoiri_chronometricAgeProtocol) |
+[chronoiri:chronometricAgeUncertaintyMethod](#chronoiri_chronometricAgeUncertaintyMethod) |
+[chronoiri:earliestChronometricAgeReferenceSystem](#chronoiri_earliestChronometricAgeReferenceSystem) |
+[chronoiri:latestChronometricAgeReferenceSystem](#chronoiri_latestChronometricAgeReferenceSystem) |
+[chronoiri:materialDated](#chronoiri_materialDated) 
+
+### 3.2 Index By Label
+
+(See also [3.1 Index By Term Name](#31-index-by-term-name))
+
+**Classes**
+
+[Chronometric Age](#chrono_ChronometricAge) 
+
+**Chronometric Age**
+
 [Chronometric Age Conversion Protocol](#chrono_chronometricAgeConversionProtocol) |
 [Chronometric Age Determined By](#chrono_chronometricAgeDeterminedBy) |
 [Chronometric Age Determined Date](#chrono_chronometricAgeDeterminedDate) |
@@ -66,14 +116,29 @@ The terms in this standard are meant to provide stable definitions that can be u
 [Chronometric Age Remarks](#chrono_chronometricAgeRemarks) |
 [Chronometric Age Uncertainty In Years](#chrono_chronometricAgeUncertaintyInYears) |
 [Chronometric Age Uncertainty Method](#chrono_chronometricAgeUncertaintyMethod) |
+[Earliest Chronometric Age](#chrono_earliestChronometricAge) |
+[Earliest Chronometric Age Reference System](#chrono_earliestChronometricAgeReferenceSystem) |
+[Latest Chronometric Age](#chrono_latestChronometricAge) |
+[Latest Chronometric Age Reference System](#chrono_latestChronometricAgeReferenceSystem) |
 [Material Dated](#chrono_materialDated) |
 [Material Dated ID](#chrono_materialDatedID) |
+[Material Dated Relationship](#chrono_materialDatedRelationship) |
 [Maximum Chronometric Age](#chrono_maximumChronometricAge) |
 [Maximum Chronometric Age Reference System](#chrono_maximumChronometricAgeReferenceSystem) |
 [Minimum Chronometric Age](#chrono_minimumChronometricAge) |
 [Minimum Chronometric Age Reference System](#chrono_minimumChronometricAgeReferenceSystem) |
 [Uncalibrated Chronometric Age](#chrono_uncalibratedChronometricAge) |
 [Verbatim Chronometric Age](#chrono_verbatimChronometricAge) 
+
+**IRI-value terms**
+
+[Chronometric Age Conversion Protocol (IRI)](#chronoiri_chronometricAgeConversionProtocol) |
+[Chronometric Age Determined By (IRI)](#chronoiri_chronometricAgeDeterminedBy) |
+[Chronometric Age Protocol (IRI)](#chronoiri_chronometricAgeProtocol) |
+[Chronometric Age Uncertainty Method (IRI)](#chronoiri_chronometricAgeUncertaintyMethod) |
+[Earliest Chronometric Age Reference System (IRI)](#chronoiri_earliestChronometricAgeReferenceSystem) |
+[Latest Chronometric Age Reference System (IRI)](#chronoiri_latestChronometricAgeReferenceSystem) |
+[Material Dated (IRI)](#chronoiri_materialDated) 
 
 ## 4 Vocabulary
 <table>
@@ -89,11 +154,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
+			<td>2021-01-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2020-11-17">http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2020-11-17</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-01-26">http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-01-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -101,11 +166,15 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The age of a specimen or related materials that is generated from a dating assay.</td>
+			<td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This is a categorical term (class) to organize the other chronometric age properties and does not ever have values.</td>
+			<td>The ChronometricAge extension is to be used only in cases where the collection event is not contemporaneous with the time when the organism was alive in its context. Collection event information can be reported in dwc:eventDate.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td>`An age range associated with a specimen derived from an AMS dating assay applied to an oyster shell in the same stratum`; `An age range associated with a specimen derived from a ceramics analysis based on other materials found in the same stratum`; `A maximum age associated with a specimen derived from K-Ar dating applied to a proximal volcanic tuff found stratigraphically below the specimen`; `An age range of a specimen based on its biostratigraphic context`; `An age of a specimen based on what is reported in legacy collections data`.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -131,11 +200,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
+			<td>2021-02-02</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2020-11-17</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2021-02-02">http://rs.tdwg.org/chrono/terms/version/chronometricAgeConversionProtocol-2021-02-02</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -143,7 +212,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The method used for converting the uncalibratedChronometricAge into a chronometric age in years, as captured in the maximumChronometricAge, maximumChronometricAgeReferenceSystem, minimumChronometricAge, and minimumChronometricAgeReferenceSystem fields.</td>
+			<td>The method used for converting the uncalibratedChronometricAge into a chronometric age in years, as captured in the earliestChronometricAge, earliestChronometricAgeReferenceSystem, latestChronometricAge, and latestChronometricAgeReferenceSystem fields.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -167,6 +236,48 @@ The terms in this standard are meant to provide stable definitions that can be u
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="chronoiri_chronometricAgeConversionProtocol"></a>Term Name  chronoiri:chronometricAgeConversionProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-02-02</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2021-02-02">http://rs.tdwg.org/chrono/iri/version/chronometricAgeConversionProtocol-2021-02-02</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Chronometric Age Conversion Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The method used to convert the uncalibratedChronometricAge into a chronometric age in years, as captured in earliestChronometricAge, earliestChronometricAgeReferenceSystem, latestChronometricAge, and latestChronometricAgeReferenceSystem.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="chrono_chronometricAgeDeterminedBy"></a>Term Name  chrono:chronometricAgeDeterminedBy</th>
 		</tr>
 	</thead>
@@ -177,11 +288,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
+			<td>2021-02-02</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2020-11-17</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2021-02-02">http://rs.tdwg.org/chrono/terms/version/chronometricAgeDeterminedBy-2021-02-02</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -197,11 +308,53 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Michelle LeFebvre | Niell Wallis`</td>
+			<td>`Michelle LeFebvre | Neill Wallis`</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
 			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Identifiers">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Identifiers</a></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_chronometricAgeDeterminedBy"></a>Term Name  chronoiri:chronometricAgeDeterminedBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2021-01-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeDeterminedBy-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Chronometric Age Determined By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A person, group, or organization that determined the ChronometricAge.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -286,6 +439,48 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Notes</td>
 			<td>May be a global unique identifier or an identifier specific to the dataset. This can be used to link this record to another repository where more information about the dataset is shared.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_chronometricAgeProtocol"></a>Term Name  chronoiri:chronometricAgeProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2021-01-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Chronometric Age Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A method used to determine the chronometric age.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -441,11 +636,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
+			<td>2021-02-02</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2020-11-17">http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2020-11-17</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2021-02-02">http://rs.tdwg.org/chrono/terms/version/chronometricAgeUncertaintyInYears-2021-02-02</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -453,11 +648,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The temporal uncertainty of the maximumChronometricAge and minimumChronometicAge in years.</td>
+			<td>The temporal uncertainty of the earliestChronometricAge and latestChronometicAge in years.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This is the +/- number for the age in years. The expected unit for this field is years.</td>
+			<td>The expected unit for this field is years. The value in this field is number of years before and after the values given in the earliest and latest chronometric age fields within which the actual values are estimated to be.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -466,6 +661,48 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>ABCD equivalence</td>
 			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-Accuracy">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-Accuracy</a></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_chronometricAgeUncertaintyMethod"></a>Term Name  chronoiri:chronometricAgeUncertaintyMethod</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeUncertaintyMethod-2021-01-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeUncertaintyMethod-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Chronometric Age Uncertainty Method (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The method used to generate the value of chronometricAgeUncertaintyInYears.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -508,6 +745,316 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>ABCD equivalence</td>
 			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method</a></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chrono_earliestChronometricAge"></a>Term Name  chrono:earliestChronometricAge</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/earliestChronometricAge">http://rs.tdwg.org/chrono/terms/earliestChronometricAge</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/earliestChronometricAge-2021-01-26">http://rs.tdwg.org/chrono/terms/version/earliestChronometricAge-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Earliest Chronometric Age</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The maximum/earliest/oldest possible age of a specimen as determined by a dating method.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The expected unit for this field is years. This field, if populated, must have an associated earliestChronometricAgeReferenceSystem.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-UpperValue">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-UpperValue</a></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_earliestChronometricAgeReferenceSystem"></a>Term Name  chronoiri:earliestChronometricAgeReferenceSystem</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/earliestChronometricAgeReferenceSystem-2021-01-26">http://rs.tdwg.org/chrono/iri/version/earliestChronometricAgeReferenceSystem-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Earliest Chronometric Age Reference System (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The reference system associated with the earliestChronometricAge.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chrono_earliestChronometricAgeReferenceSystem"></a>Term Name  chrono:earliestChronometricAgeReferenceSystem</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/earliestChronometricAgeReferenceSystem-2021-01-26">http://rs.tdwg.org/chrono/terms/version/earliestChronometricAgeReferenceSystem-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Earliest Chronometric Age Reference System</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The reference system associated with the earliestChronometricAge.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td>`kya`,`mya`,`BP`,`AD`,`BCE`,`ka`,`Ma`,`Ga`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chrono_latestChronometricAge"></a>Term Name  chrono:latestChronometricAge</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/latestChronometricAge">http://rs.tdwg.org/chrono/terms/latestChronometricAge</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/latestChronometricAge-2021-01-26">http://rs.tdwg.org/chrono/terms/version/latestChronometricAge-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Latest Chronometric Age</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The minimum/latest/youngest possible age of a specimen as determined by a dating method.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The expected unit for this field is years. This field, if populated, must have an associated latestChronometricAgeReferenceSystem.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td>27</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-LowerValue">https://terms.tdwg.org/wiki/abcd-efg:UnitStratigraphicDetermination-ChronostratigraphicAttribution-LowerValue</a></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_latestChronometricAgeReferenceSystem"></a>Term Name  chronoiri:latestChronometricAgeReferenceSystem</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2021-01-26">http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Latest Chronometric Age Reference System (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The reference system associated with the latestChronometricAge.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chrono_latestChronometricAgeReferenceSystem"></a>Term Name  chrono:latestChronometricAgeReferenceSystem</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/latestChronometricAgeReferenceSystem-2021-01-26">http://rs.tdwg.org/chrono/terms/version/latestChronometricAgeReferenceSystem-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Latest Chronometric Age Reference System</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The reference system associated with the latestChronometricAge.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td>`kya`,`mya`,`BP`,`AD`,`BCE`,`ka`,`Ma`,`Ga`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_materialDated"></a>Term Name  chronoiri:materialDated</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/materialDated">http://rs.tdwg.org/chrono/iri/materialDated</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/materialDated-2021-01-26">http://rs.tdwg.org/chrono/iri/version/materialDated-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Dated (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The material on which the chronometricAgeProtocol was actually performed.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -571,11 +1118,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2021-01-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/materialDatedID-2020-09-14">http://rs.tdwg.org/chrono/terms/version/materialDatedID-2020-09-14</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-01-26">http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-01-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -588,6 +1135,52 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`dwc:occurrenceID: 702b306d-f167-44d0-a5c9-890ece2b8839`, `<a href="https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`">https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`</a></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chrono_materialDatedRelationship"></a>Term Name  chrono:materialDatedRelationship</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/materialDatedRelationship">http://rs.tdwg.org/chrono/terms/materialDatedRelationship</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/materialDatedRelationship-2021-01-26">http://rs.tdwg.org/chrono/terms/version/materialDatedRelationship-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Material Dated Relationship</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The relationship of the materialDated to the subject of the ChronometricAge record, from which the ChronometricAge of the subject is inferred.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td>`sameAs` (cases where the subject material was completely destructively subsampled to get the ChronometricAge), `subsampleOf` (cases where part of the original specimen was extracted as the material used to determine the ChronometricAge), `inContextWith` (cases where the ChronometricAge is inferred from materialDated, such as sediments or cultural objects, in related temporal context),`stratigraphicallyCorrelatedWith` (cases where the ChronometricAge is inferred from materialDated in a stratigraphically correlated context)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
