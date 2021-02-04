@@ -8,7 +8,7 @@ import pandas as pd
 github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/chronometric/'
 
 # This is a Python list of the database names of the term version lists to be included in the document.
-term_lists = ['chronometricage']
+term_lists = ['chronometricage','chronoiri']
 
 column_mappings = [
     {'norm': 'iri', 'accum': 'version'},
