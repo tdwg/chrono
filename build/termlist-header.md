@@ -55,3 +55,4 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 The terms in this standard are meant to provide stable definitions that can be used in a variety of contexts, but were envisioned principally to function together as an extension to Darwin Core, where each core record may be annotated by one or more chronometric ages.
 
 ## 3 Term index
+

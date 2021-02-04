@@ -1,8 +1,7 @@
-# Script to build Markdown pages that provide term metadata for simple vocabularies
+# Script to build Markdown pages that provide term metadata for complex vocabularies
 # Steve Baskauf 2020-06-28 CC0
 # This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
-# Note: this script calls a function from http_library.py, which requires importing the requests, csv, and json modules
 import re
 import requests   # best library to manage HTTP transactions
 import csv        # library to read/write/parse CSV files
@@ -13,13 +12,8 @@ import pandas as pd
 # Configuration section
 # -----------------
 
-# !!!! Note !!!!
-# This is an example of a simple vocabulary without categories. For a complex example
-# with multiple namespaces and several categories, see build-page-categories.ipynb
-
-# This is the base URL for raw files from the branch of the repo that has been pushed to GitHub. In this example,
-# the branch is named "pathway"
-print('FIXME: after ratification, change the end of the path in line 23 from "chronometric/" to "master/"')
+# This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
+print('FIXME: after ratification, change the end of the path in line 17 from "chronometric/" to "master/"')
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/chronometric/'
 
 headerFileName = 'termlist-header.md'
@@ -27,7 +21,7 @@ footerFileName = 'termlist-footer.md'
 outFileName = '../docs/list/index.md'
 
 # This is a Python list of the database names of the term lists to be included in the document.
-termLists = ['chronometricage']
+termLists = ['chronometricage', 'chronoiri']
 
 # NOTE! There may be problems unless every term list is of the same vocabulary type since the number of columns will differ
 # However, there probably aren't any circumstances where mixed types will be used to generate the same page.
@@ -35,14 +29,14 @@ vocab_type = 1 # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is
 
 # Terms in large vocabularies like Darwin and Audubon Cores may be organized into categories using tdwgutility_organizedInClass
 # If so, those categories can be used to group terms in the generated term list document.
-organized_in_categories = False
+organized_in_categories = True
 
 # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
 # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
-display_order = ['']
-display_label = ['Vocabulary'] # these are the section labels for the categories in the page
-display_comments = [''] # these are the comments about the category to be appended following the section labels
-display_id = ['Vocabulary'] # these are the fragment identifiers for the associated sections for the categories
+display_order = [ 'http://tdwg.org/chrono/terms/ChronometricAge', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI']
+display_label = ['Chronometric Age', 'IRI-value terms']
+display_comments = ['','']
+display_id = ['chronometric_age', 'use_with_iri']
 
 # ---------------
 # Function definitions
@@ -60,9 +54,9 @@ def createLinks(text):
     result = re.sub(pattern, repl, text)
     return result
 
+print('Retrieving term list metadata from GitHub')
 term_lists_info = []
 
-print('reading data from GitHub')
 frame = pd.read_csv(githubBaseUri + 'term-lists/term-lists.csv', na_filter=False)
 for termList in termLists:
     term_list_dict = {'list_iri': termList}
@@ -85,6 +79,7 @@ if organized_in_categories:
     column_list.append('tdwgutility_organizedInClass')
 column_list.append('version_iri')
 
+print('Retrieving metadata about terms from all namespaces from GitHub')
 # Create list of lists metadata table
 table_list = []
 for term_list in term_lists_info:
@@ -97,6 +92,7 @@ for term_list in term_lists_info:
     frame = pd.read_csv(data_url, na_filter=False)
     for index,row in frame.iterrows():
         row_list = [term_list['pref_ns_prefix'], term_list['pref_ns_uri'], row['term_localName'], row['label'], row['rdfs_comment'], row['dcterms_description'], row['examples'], row['term_modified'], row['term_deprecated'], row['rdf_type'], row['tdwgutility_abcdEquivalence'], row['replaces_term'], row['replaces1_term']]
+        #row_list = [term_list['pref_ns_prefix'], term_list['pref_ns_uri'], row['term_localName'], row['label'], row['definition'], row['usage'], row['notes'], row['term_modified'], row['term_deprecated'], row['type']]
         if vocab_type == 2:
             row_list += [row['controlled_value_string']]
         elif vocab_type == 3:
@@ -128,13 +124,65 @@ print('processing data')
 terms_df = pd.DataFrame(table_list, columns = column_list)
 
 terms_sorted_by_label = terms_df.sort_values(by='label')
-terms_sorted_by_localname = terms_df.sort_values(by='term_localName')
+#terms_sorted_by_localname = terms_df.sort_values(by='term_localName')
 
+# This makes sort case insensitive
+terms_sorted_by_localname = terms_df.iloc[terms_df.term_localName.str.lower().argsort()]
+#terms_sorted_by_localname
+print('done retrieving')
+print()
+
+print('Generating term index by CURIE')
+text = '### 3.1 Index By Term Name\n\n'
+text += '(See also [3.2 Index By Label](#32-index-by-label))\n\n'
+
+text += '**Classes**\n'
+text += '\n'
+for row_index,row in terms_sorted_by_localname.iterrows():
+    if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
+        curie = row['pref_ns_prefix'] + ":" + row['term_localName']
+        curie_anchor = curie.replace(':','_')
+        text += '[' + curie + '](#' + curie_anchor + ') |\n'
+text = text[:len(text)-2] # remove final trailing vertical bar and newline
+text += '\n\n' # put back removed newline
+
+for category in range(0,len(display_order)):
+    text += '**' + display_label[category] + '**\n'
+    text += '\n'
+    if organized_in_categories:
+        filtered_table = terms_sorted_by_localname[terms_sorted_by_localname['tdwgutility_organizedInClass']==display_order[category]]
+        filtered_table.reset_index(drop=True, inplace=True)
+    else:
+        filtered_table = terms_sorted_by_localname
+        
+    for row_index,row in filtered_table.iterrows():
+        if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
+            curie = row['pref_ns_prefix'] + ":" + row['term_localName']
+            curie_anchor = curie.replace(':','_')
+            text += '[' + curie + '](#' + curie_anchor + ') |\n'
+    text = text[:len(text)-2] # remove final trailing vertical bar and newline
+    text += '\n\n' # put back removed newline
+
+index_by_name = text
+
+#print(index_by_name)
+
+print('Generating term index by label')
 text = '\n\n'
 
 # Comment out the following two lines if there is no index by local names
-#text = '### 3.2 Index By Label\n\n'
-#text += '(See also [3.1 Index By Term Name](#31-index-by-term-name))\n\n'
+text = '### 3.2 Index By Label\n\n'
+text += '(See also [3.1 Index By Term Name](#31-index-by-term-name))\n\n'
+
+text += '**Classes**\n'
+text += '\n'
+for row_index,row in terms_sorted_by_label.iterrows():
+    if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
+        curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
+        text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
+text = text[:len(text)-2] # remove final trailing vertical bar and newline
+text += '\n\n' # put back removed newline
+
 for category in range(0,len(display_order)):
     if organized_in_categories:
         text += '**' + display_label[category] + '**\n'
@@ -143,12 +191,12 @@ for category in range(0,len(display_order)):
         filtered_table.reset_index(drop=True, inplace=True)
     else:
         filtered_table = terms_sorted_by_label
-        filtered_table.reset_index(drop=True, inplace=True)
         
     for row_index,row in filtered_table.iterrows():
         if row_index == 0 or (row_index != 0 and row['label'] != filtered_table.iloc[row_index - 1].loc['label']): # this is a hack to prevent duplicate labels
-            curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
-            text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
+            if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
+                curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
+                text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
     text = text[:len(text)-2] # remove final trailing vertical bar and newline
     text += '\n\n' # put back removed newline
 
@@ -158,20 +206,25 @@ index_by_label = text
 
 decisions_df = pd.read_csv('https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/decisions/decisions-links.csv', na_filter=False)
 
+# ---------------
 # generate a table for each term, with terms grouped by category
+# ---------------
 
+print('Generating terms table')
 # generate the Markdown for the terms table
 text = '## 4 Vocabulary\n'
-for category in range(0,len(display_order)):
-    if organized_in_categories:
-        text += '### 4.' + str(category + 1) + ' ' + display_label[category] + '\n'
-        text += '\n'
-        text += display_comments[category] # insert the comments for the category, if any.
-        filtered_table = terms_sorted_by_localname[terms_sorted_by_localname['tdwgutility_organizedInClass']==display_order[category]]
-        filtered_table.reset_index(drop=True, inplace=True)
-    else:
-        filtered_table = terms_sorted_by_localname
-        filtered_table.reset_index(drop=True, inplace=True)
+if True:
+    filtered_table = terms_sorted_by_localname
+
+#for category in range(0,len(display_order)):
+#    if organized_in_categories:
+#        text += '### 4.' + str(category + 1) + ' ' + display_label[category] + '\n'
+#        text += '\n'
+#        text += display_comments[category] # insert the comments for the category, if any.
+#        filtered_table = terms_sorted_by_localname[terms_sorted_by_localname['tdwgutility_organizedInClass']==display_order[category]]
+#        filtered_table.reset_index(drop=True, inplace=True)
+#    else:
+#        filtered_table = terms_sorted_by_localname
 
     for row_index,row in filtered_table.iterrows():
         text += '<table>\n'
@@ -210,9 +263,22 @@ for category in range(0,len(display_order)):
             text += '\t\t\t<td><strong>This term is deprecated and should no longer be used.</strong></td>\n'
             text += '\t\t</tr>\n'
 
+            for dep_index,dep_row in filtered_table.iterrows():
+                if dep_row['replaces_term'] == uri:
+                    text += '\t\t<tr>\n'
+                    text += '\t\t\t<td>Is replaced by</td>\n'
+                    text += '\t\t\t<td><a href="#' + dep_row['pref_ns_prefix'] + "_" + dep_row['term_localName'] + '">' + dep_row['pref_ns_uri'] + dep_row['term_localName'] + '</a></td>\n'
+                    text += '\t\t</tr>\n'
+                if dep_row['replaces1_term'] == uri:
+                    text += '\t\t<tr>\n'
+                    text += '\t\t\t<td>Is replaced by</td>\n'
+                    text += '\t\t\t<td><a href="#' + dep_row['pref_ns_prefix'] + "_" + dep_row['term_localName'] + '">' + dep_row['pref_ns_uri'] + dep_row['term_localName'] + '</a></td>\n'
+                    text += '\t\t</tr>\n'
+
         text += '\t\t<tr>\n'
         text += '\t\t\t<td>Definition</td>\n'
         text += '\t\t\t<td>' + row['rdfs_comment'] + '</td>\n'
+        #text += '\t\t\t<td>' + row['definition'] + '</td>\n'
         text += '\t\t</tr>\n'
 
         if row['dcterms_description'] != '':
@@ -238,7 +304,7 @@ for category in range(0,len(display_order)):
             text += '\t\t\t<td>' + createLinks(row['tdwgutility_abcdEquivalence']) + '</td>\n'
             text += '\t\t</tr>\n'
 
-        if (vocab_type == 2 or vocab_type == 3) and row['controlled_value_string'] != '': # controlled vocabulary
+        if vocab_type == 2 or vocab_type ==3: # controlled vocabulary
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>Controlled value</td>\n'
             text += '\t\t\t<td>' + row['controlled_value_string'] + '</td>\n'
@@ -280,10 +346,14 @@ for category in range(0,len(display_order)):
         text += '\n'
     text += '\n'
 term_table = text
+print('done generating')
+print()
 
 #print(term_table)
 
-text = index_by_label + term_table
+print('Merging term table with header and footer and saving file')
+#text = index_by_label + term_table
+text = index_by_name + index_by_label + term_table
 
 # read in header and footer, merge with terms table, and output
 
@@ -301,5 +371,3 @@ outputObject.write(output)
 outputObject.close()
     
 print('done')
-
-
