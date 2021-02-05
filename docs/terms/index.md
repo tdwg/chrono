@@ -182,7 +182,7 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/materialDatedID">http://rs.tdwg.org/chrono/terms/materialDatedID</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An identifier for the material on which the chronometricAgeProtocol was performed, if applicable.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>dwc:occurrenceID: 702b306d-f167-44d0-a5c9-890ece2b8839</code>, <code><a href="https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4">https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4</a></code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>dwc:materialSampleID: <a href="https://www.ebi.ac.uk/metagenomics/samples/SRS1930158">https://www.ebi.ac.uk/metagenomics/samples/SRS1930158</a></code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
