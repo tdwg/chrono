@@ -1120,11 +1120,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2021-01-26</td>
+			<td>2021-02-05</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-01-26">http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-01-26</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-02-05">http://rs.tdwg.org/chrono/terms/version/materialDatedID-2021-02-05</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1132,11 +1132,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>An identifier for the material on which the chronometricAgeProtocol was performed, if applicable.</td>
+			<td>An identifier for the MaterialSample on which the chronometricAgeProtocol was performed, if applicable.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`dwc:occurrenceID: 702b306d-f167-44d0-a5c9-890ece2b8839`, `<a href="https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`">https://www.idigbio.org/portal/records/e1438058-c8b9-418e-998e-1e497a3bcec4`</a></td>
+			<td>`dwc:materialSampleID: <a href="https://www.ebi.ac.uk/metagenomics/samples/SRS1930158`">https://www.ebi.ac.uk/metagenomics/samples/SRS1930158`</a></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>

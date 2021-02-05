@@ -30,6 +30,17 @@ This document is intended to be an easy-to-read reference of the currently recom
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeDeterminedDate">chronometricAgeDeterminedDate</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeReferences">chronometricAgeReferences</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeRemarks">chronometricAgeRemarks</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeProtocol">chronometricAgeProtocol</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:materialDated">materialDated</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:maximumChronometricAge">maximumChronometricAge</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:maximumChronometricAgeReferenceSystem">maximumChronometricAgeReferenceSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:minimumChronometricAge">minimumChronometricAge</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:minimumChronometricAgeReferenceSystem">minimumChronometricAgeReferenceSystem</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -180,7 +191,7 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-secondary"><th colspan="2">materialDatedID <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/materialDatedID">http://rs.tdwg.org/chrono/terms/materialDatedID</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An identifier for the material on which the chronometricAgeProtocol was performed, if applicable.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>An identifier for the MaterialSample on which the chronometricAgeProtocol was performed, if applicable.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>dwc:materialSampleID: <a href="https://www.ebi.ac.uk/metagenomics/samples/SRS1930158">https://www.ebi.ac.uk/metagenomics/samples/SRS1930158</a></code></td></tr>
     </tbody>
@@ -240,22 +251,6 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Examples</td><td><code>Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.</code></td></tr>
     </tbody>
 </table>
-
-
-## UseWithIRI
-
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeProtocol">chronometricAgeProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:materialDated">materialDated</a>
-    </div>
-
-
 <p class="invisible">
     <a id="chronoiri:chronometricAgeConversionProtocol"></a><a id="chronometricAgeConversionProtocol"></a></p>
 <table class="table table-sm table-bordered">
@@ -331,6 +326,50 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr><td class="theme-label">Definition</td><td>The material on which the chronometricAgeProtocol was actually performed.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="chrono:maximumChronometricAge"></a><a id="maximumChronometricAge"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">maximumChronometricAge <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/maximumChronometricAge">http://rs.tdwg.org/chrono/terms/maximumChronometricAge</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Upper limit for the age of a specimen as determined by a dating method.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The expected unit for this field is years. This field, if populated, must have an associated maximumChronometricAgeReferenceSystem.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>27</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="chrono:maximumChronometricAgeReferenceSystem"></a><a id="maximumChronometricAgeReferenceSystem"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">maximumChronometricAgeReferenceSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/maximumChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/maximumChronometricAgeReferenceSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The reference system associated with the maximumChronometricAge.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>kya</code>,<code>mya</code>,<code>BP</code>,<code>AD</code>,<code>BCE</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="chrono:minimumChronometricAge"></a><a id="minimumChronometricAge"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">minimumChronometricAge <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/minimumChronometricAge">http://rs.tdwg.org/chrono/terms/minimumChronometricAge</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Lower limit for the age of a specimen as determined by a dating method.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The expected unit for this field is years. This field, if populated, must have an associated maximumChronometricAgeReferenceSystem.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>100</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="chrono:minimumChronometricAgeReferenceSystem"></a><a id="minimumChronometricAgeReferenceSystem"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">minimumChronometricAgeReferenceSystem <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/minimumChronometricAgeReferenceSystem</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The reference system associated with the minimumChronometricAge.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>kya</code>,<code>mya</code>,<code>BP</code>,<code>AD</code>,<code>BCE</code></td></tr>
     </tbody>
 </table>
 
