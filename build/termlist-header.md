@@ -25,7 +25,7 @@ Latest version
 : <http://rs.tdwg.org/dwc/doc/chrono/>
 
 Abstract
-: The Chronometric Age Vocabulary is standard for transmitting information about chronometric ages and the techniques used to determine them. This document lists all terms in namespaces currently used in the vocabulary.
+: The Chronometric Age Vocabulary is a standard for transmitting information about chronometric ages - the processes and results of an assay or other analysis used to determine the age of a sample. This document lists all terms in namespaces currently used in the vocabulary.
 
 Contributors
 : John Wieczorek, Laura Brenskelle, Robert Guralnick, Kitty Emery, Michelle LeFebvre, Neill Wallis, Steve Baskauf, Marie Elise Lecoq, Eric Kansa, Sarah Kansa, Denné Reed
