@@ -1208,15 +1208,19 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-11-17">http://rs.tdwg.org/chrono/terms/version/maximumChronometricAge-2020-11-17</a></td>
+			<td>2021-01-26</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Maximum Chronometric Age</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#chrono_latestChronometricAge">http://rs.tdwg.org/chrono/terms/latestChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1254,15 +1258,19 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-11-17">http://rs.tdwg.org/chrono/terms/version/maximumChronometricAgeReferenceSystem-2020-11-17</a></td>
+			<td>2021-01-26</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Maximum Chronometric Age Reference System</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#chrono_latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1296,15 +1304,19 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-11-17">http://rs.tdwg.org/chrono/terms/version/minimumChronometricAge-2020-11-17</a></td>
+			<td>2021-01-26</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Minimum Chronometric Age</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#chrono_earliestChronometricAge">http://rs.tdwg.org/chrono/terms/earliestChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1342,15 +1354,19 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-11-17</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-11-17">http://rs.tdwg.org/chrono/terms/version/minimumChronometricAgeReferenceSystem-2020-11-17</a></td>
+			<td>2021-01-26</td>
 		</tr>
 		<tr>
 			<td>Label</td>
 			<td>Minimum Chronometric Age Reference System</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><strong>This term is deprecated and should no longer be used.</strong></td>
+		</tr>
+		<tr>
+			<td>Is replaced by</td>
+			<td><a href="#chrono_earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
