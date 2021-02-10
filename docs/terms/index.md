@@ -30,13 +30,6 @@ This document is intended to be an easy-to-read reference of the currently recom
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeDeterminedDate">chronometricAgeDeterminedDate</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeReferences">chronometricAgeReferences</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeRemarks">chronometricAgeRemarks</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeProtocol">chronometricAgeProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:materialDated">materialDated</a>
     </div>
 
 <table class="table table-sm table-bordered">
@@ -247,6 +240,22 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Examples</td><td><code>Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.</code></td></tr>
     </tbody>
 </table>
+
+
+## UseWithIRI
+
+For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeProtocol">chronometricAgeProtocol</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:materialDated">materialDated</a>
+    </div>
+
+
 <p class="invisible">
     <a id="chronoiri:chronometricAgeConversionProtocol"></a><a id="chronometricAgeConversionProtocol"></a></p>
 <table class="table table-sm table-bordered">

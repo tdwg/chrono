@@ -96,7 +96,10 @@ class DwcDigester(object):
         """
         with DwcBuildReader(self.qrg_term_versions) as versions:
             for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
-                yield vterm['recommended_term_iri'].rpartition('/')[-1]
+                iri = vterm['recommended_term_iri']
+                if iri.find('http://rs.tdwg.org/chrono/terms/') != -1 and \
+                        iri.find('/ChronometricAge') == -1:
+                    yield vterm['recommended_term_iri'].rpartition('/')[-1]
 
     def _store_versions(self):
         """Collect all the versions data in a dictionary as the
