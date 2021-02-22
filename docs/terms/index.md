@@ -30,14 +30,21 @@ This document is intended to be an easy-to-read reference of the currently recom
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeDeterminedDate">chronometricAgeDeterminedDate</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeReferences">chronometricAgeReferences</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#chrono:chronometricAgeRemarks">chronometricAgeRemarks</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeProtocol">chronometricAgeProtocol</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:materialDated">materialDated</a>
     </div>
 
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-primary"><th colspan="2">ChronometricAge <span class="badge badge-primary float-right">Class</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/ChronometricAge">http://rs.tdwg.org/chrono/terms/ChronometricAge</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The ChronometricAge extension is to be used only in cases where the collection event is not contemporaneous with the time when the organism was alive in its context. Collection event information can be reported in dwc:eventDate.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>An approximation of a temporal position (in the sense conveyed by <a href="https://www.w3.org/TR/owl-time/#time:TemporalPosition">https://www.w3.org/TR/owl-time/#time:TemporalPosition</a>) that is supported via evidence.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>An age range associated with a specimen derived from an AMS dating assay applied to an oyster shell in the same stratum</code>; <code>An age range associated with a specimen derived from a ceramics analysis based on other materials found in the same stratum</code>; <code>A maximum age associated with a specimen derived from K-Ar dating applied to a proximal volcanic tuff found stratigraphically below the specimen</code>; <code>An age range of a specimen based on its biostratigraphic context</code>; <code>An age of a specimen based on what is reported in legacy collections data</code>.</td></tr>
     </tbody>
 </table>
@@ -240,22 +247,6 @@ This document is intended to be an easy-to-read reference of the currently recom
         <tr><td class="theme-label">Examples</td><td><code>Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.</code></td></tr>
     </tbody>
 </table>
-
-
-## UseWithIRI
-
-For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeConversionProtocol">chronometricAgeConversionProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeDeterminedBy">chronometricAgeDeterminedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeProtocol">chronometricAgeProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:chronometricAgeUncertaintyMethod">chronometricAgeUncertaintyMethod</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:earliestChronometricAgeReferenceSystem">earliestChronometricAgeReferenceSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:latestChronometricAgeReferenceSystem">latestChronometricAgeReferenceSystem</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#chronoiri:materialDated">materialDated</a>
-    </div>
-
-
 <p class="invisible">
     <a id="chronoiri:chronometricAgeConversionProtocol"></a><a id="chronometricAgeConversionProtocol"></a></p>
 <table class="table table-sm table-bordered">

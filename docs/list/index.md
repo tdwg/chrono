@@ -156,11 +156,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2021-01-26</td>
+			<td>2021-02-21</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-01-26">http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-01-26</a></td>
+			<td><a href="http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-02-21">http://rs.tdwg.org/chrono/terms/version/ChronometricAge-2021-02-21</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -168,11 +168,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td>
+			<td>An approximation of a temporal position (in the sense conveyed by https://www.w3.org/TR/owl-time/#time:TemporalPosition) that is supported via evidence.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The ChronometricAge extension is to be used only in cases where the collection event is not contemporaneous with the time when the organism was alive in its context. Collection event information can be reported in dwc:eventDate.</td>
+			<td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
