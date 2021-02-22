@@ -36,8 +36,8 @@ This document is intended to be an easy-to-read reference of the currently recom
     <tbody>
         <tr class="table-primary"><th colspan="2">ChronometricAge <span class="badge badge-primary float-right">Class</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/ChronometricAge">http://rs.tdwg.org/chrono/terms/ChronometricAge</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The ChronometricAge extension is to be used only in cases where the collection event is not contemporaneous with the time when the organism was alive in its context. Collection event information can be reported in dwc:eventDate.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>An approximation of a temporal position (in the sense conveyed by <a href="https://www.w3.org/TR/owl-time/#time:TemporalPosition">https://www.w3.org/TR/owl-time/#time:TemporalPosition</a>) that is supported via evidence.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>The age of a specimen and how this age is known, whether by a dating assay, a relative association with dated material, or legacy collections information.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>An age range associated with a specimen derived from an AMS dating assay applied to an oyster shell in the same stratum</code>; <code>An age range associated with a specimen derived from a ceramics analysis based on other materials found in the same stratum</code>; <code>A maximum age associated with a specimen derived from K-Ar dating applied to a proximal volcanic tuff found stratigraphically below the specimen</code>; <code>An age range of a specimen based on its biostratigraphic context</code>; <code>An age of a specimen based on what is reported in legacy collections data</code>.</td></tr>
     </tbody>
 </table>
