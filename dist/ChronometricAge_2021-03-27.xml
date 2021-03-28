@@ -11,7 +11,7 @@
     namespace="http://rs.tdwg.org/chrono/terms/"
     rowType="http://rs.tdwg.org/chrono/terms/ChronometricAge"
     dc:issued="2021-03-27"
-    dc:description="Extension to Occurrence Core to capture chronometric age information."
+    dc:description="Extension to Occurrence Core to capture chronometric age information. The ChronometricAge extension is to be used only in cases where the collection event is not contemporaneous with the time when the organism was alive in its context. Collection event information can be reported in dwc:eventDate. See also the normative term list document at https://tdwg.github.io/chrono/list/ and the human-friendly Quick Reference Guide at https://tdwg.github.io/chrono/terms/."
     dc:relation="https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv"
     dc:subject="dwc:Occurrence">
     <property
