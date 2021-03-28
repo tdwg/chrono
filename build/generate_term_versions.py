@@ -84,6 +84,23 @@ for row_index,row in accumulated_frame.iterrows():
             normative_doc_row.append(row[column_mapping['accum']])
     normative_doc_list.append(normative_doc_row)
 
+# special handling for http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI. Eventually we want to eliminate this.
+use_with_iri_row = ['http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI-2017-10-06',
+  'UseWithIRI',
+  'UseWithIRI',
+  'The category of terms that are recommended to have an IRI as a value.',
+  'A utility class to organize the dwciri: terms.',
+  '',
+  'http://www.w3.org/2000/01/rdf-schema#Class',
+  '2017-10-06',
+  'recommended',
+  '',
+  'http://www.w3.org/2000/01/rdf-schema#Class',
+  'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI',
+  'not in ABCD',
+  '']
+normative_doc_list.append(use_with_iri_row)
+
 # Turn list of lists into dataframe
 normative_doc_df = pd.DataFrame(normative_doc_list, columns = column_headers)
 # Set the row label as the version IRI
