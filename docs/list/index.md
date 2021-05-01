@@ -10,22 +10,22 @@ Preferred namespace abbreviation
 : chrono:
 
 Date version issued
-: 2020-MM-DD - put ratification date here
+: 2021-04-27
 
 Date created
-: 2020-MM-DD - put ratification date here
+: 2021-04-27
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/chrono/iso-date-here>
+: <http://rs.tdwg.org/dwc/doc/chrono/2021-04-27>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/chrono/>
 
 Abstract
-: The Chronometric Age Vocabulary is a standard for transmitting information about chronometric ages - the processes and results of an assay or other analysis used to determine the age of a sample. This document lists all terms in namespaces currently used in the vocabulary.
+: The Chronometric Age Vocabulary is a standard for transmitting information about chronometric ages - the processes and results of an assay or other analysis used to determine the age of a MaterialSample. This document lists all terms in namespaces currently used in the vocabulary.
 
 Contributors
 : John Wieczorek, Laura Brenskelle, Robert Guralnick, Kitty Emery, Michelle LeFebvre, Neill Wallis, Steve Baskauf, Marie Elise Lecoq, Eric Kansa, Sarah Kansa, Denné Reed
@@ -34,12 +34,12 @@ Creator
 : TDWG Darwin Core Chronometric Age Extension Task Group
 
 Bibliographic citation
-: TDWG Darwin Core Chronometric Age Extension Task Group. 2020. Chronometric Age Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/chrono/iso-date-here>
+: TDWG Darwin Core Chronometric Age Extension Task Group. 2021. Chronometric Age Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/chrono/2021-04-27>
 
 
 ## 1 Introduction
 
-This document contains all versions of terms in the Chronometric Age vocabulary (http://rs.tdwg.org/version/chrono/2020-MM-DD). The vocabulary uses the namespace abbreviation `chrono:`. Earlier term versions using the `zooarchnet:` namespace are deprecated and should no longer be used. These deprecated terms can be found at (http://rs.tdwg.org/chrono/doc/list/2020-09-14).
+This document contains all versions of terms in the Chronometric Age vocabulary (http://rs.tdwg.org/version/chrono/2021-04-27). The vocabulary uses the namespace abbreviation `chrono:`. Earlier term versions using the `zooarchnet:` namespace are deprecated and should no longer be used. These deprecated terms can be found at (http://rs.tdwg.org/chrono/doc/list/2020-09-14).
 
 For a simplified list that contains only the currently recommended terms, see the Chronometric Age Quick Reference Guide (https://chrono.tdwg.org/terms/).
 
