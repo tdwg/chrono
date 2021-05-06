@@ -424,7 +424,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-09-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
@@ -443,46 +443,8 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>May be a global unique identifier or an identifier specific to the dataset. This can be used to link this record to another repository where more information about the dataset is shared.</td>
 		</tr>
 		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="chronoiri_chronometricAgeProtocol"></a>Term Name  chronoiri:chronometricAgeProtocol</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2021-01-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2021-01-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2021-01-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Chronometric Age Protocol (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A method used to determine the chronometric age.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Examples</td>
+			<td>`<a href="https://www.canadianarchaeology.ca/samples/70673`">https://www.canadianarchaeology.ca/samples/70673`</a></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -529,6 +491,48 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>ABCD equivalence</td>
 			<td><a href="https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method">https://terms.tdwg.org/wiki/abcd-efg:StratigraphicAttributions-ChronostratigraphicAttribution-Method</a></td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_chronometricAgeProtocol"></a>Term Name  chronoiri:chronometricAgeProtocol</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2021-01-26">http://rs.tdwg.org/chrono/iri/version/chronometricAgeProtocol-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Chronometric Age Protocol (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A method used to determine the chronometric age.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -938,48 +942,6 @@ The terms in this standard are meant to provide stable definitions that can be u
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="chronoiri_latestChronometricAgeReferenceSystem"></a>Term Name  chronoiri:latestChronometricAgeReferenceSystem</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2021-01-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2021-01-26">http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2021-01-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Latest Chronometric Age Reference System (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The reference system associated with the latestChronometricAge.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="chrono_latestChronometricAgeReferenceSystem"></a>Term Name  chrono:latestChronometricAgeReferenceSystem</th>
 		</tr>
 	</thead>
@@ -1011,6 +973,48 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Examples</td>
 			<td>`kya`,`mya`,`BP`,`AD`,`BCE`,`ka`,`Ma`,`Ga`</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="chronoiri_latestChronometricAgeReferenceSystem"></a>Term Name  chronoiri:latestChronometricAgeReferenceSystem</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2021-01-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2021-01-26">http://rs.tdwg.org/chrono/iri/version/latestChronometricAgeReferenceSystem-2021-01-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Latest Chronometric Age Reference System (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The reference system associated with the latestChronometricAge.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1270,7 +1274,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Is replaced by</td>
-			<td><a href="#chrono_latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chrono_materialDatedRelationship">http://rs.tdwg.org/chrono/terms/materialDatedRelationship</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1316,7 +1320,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Is replaced by</td>
-			<td><a href="#chrono_earliestChronometricAge">http://rs.tdwg.org/chrono/terms/earliestChronometricAge</a></td>
+			<td><a href="#chrono_earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1366,7 +1370,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Is replaced by</td>
-			<td><a href="#chrono_earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chrono_latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/latestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1400,7 +1404,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-09-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
@@ -1442,7 +1446,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2020-08-14</td>
+			<td>2020-09-14</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
