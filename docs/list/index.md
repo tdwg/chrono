@@ -39,9 +39,9 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document contains all versions of terms in the Chronometric Age vocabulary (http://rs.tdwg.org/version/chrono/2021-04-27). The vocabulary uses the namespace abbreviation `chrono:`. Earlier term versions using the `zooarchnet:` namespace are deprecated and should no longer be used. These deprecated terms can be found at (http://rs.tdwg.org/chrono/doc/list/2020-09-14).
+This document contains all versions of terms in the Chronometric Age vocabulary (<http://rs.tdwg.org/version/chrono/2021-04-27>). The vocabulary uses the namespace abbreviation `chrono:`. Earlier term versions using the `zooarchnet:` namespace are deprecated and should no longer be used. These deprecated terms can be found at <http://rs.tdwg.org/chrono/zooarchnet/>.
 
-For a simplified list that contains only the currently recommended terms, see the Chronometric Age Quick Reference Guide (https://chrono.tdwg.org/terms/).
+For a simplified list that contains only the currently recommended terms, see the Chronometric Age Quick Reference Guide (<https://chrono.tdwg.org/terms/>).
 
 ### 1.1 Status of the content of this document
 
