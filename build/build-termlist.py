@@ -13,8 +13,7 @@ import pandas as pd
 # -----------------
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-print('FIXME: after ratification, change the end of the path in line 17 from "chronometric/" to "master/"')
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/chronometric/'
+githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
 
 headerFileName = 'termlist-header.md'
 footerFileName = 'termlist-footer.md'
