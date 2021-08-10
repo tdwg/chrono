@@ -5,7 +5,25 @@ description: Vocabulary maintained by the Darwin Core Maintenance Interest Group
 navbar:
   left:
   - text: Terms
-    href: terms/
+    menu:
+    - text: Darwin Core
+      href: https://dwc.tdwg.org/list/
+    - text: Chronometric Age
+      href: list/
+  - text: Guides
+    menu:
+    - text: Darwin Core Quick Reference
+      href: https://dwc.tdwg.org/terms/
+    - text: Chronometric Age Quick Reference
+      href: terms/
+    - text: Text (Darwin Core Archive)
+      href: text/
+    - text: RDF
+      href: rdf/
+    - text: XML
+      href: xml/
+    - text: Questions & Answers
+      href: https://github.com/tdwg/dwc-qa/blob/master/README.md
   right:
   - text: GitHub
     href: https://github.com/tdwg/chrono
