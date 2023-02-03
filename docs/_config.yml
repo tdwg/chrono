@@ -1,7 +1,5 @@
 # SITE SETTINGS
 title: Chronometric Age Extension
-description: Vocabulary maintained by the Darwin Core Maintenance Interest Group to facilitate the sharing of information about chronometric ages and the techniques used to determine them.
-# url: "https://chrono.tdwg.org/"
 navbar:
   left:
   - text: Terms
@@ -27,9 +25,34 @@ navbar:
   right:
   - text: GitHub
     href: https://github.com/tdwg/chrono
+url: "https://tdwg.github.io"
+baseurl: "/chrono"
+
+# SOCIAL PROFILES
+social:
+  github: tdwg/chrono
+
+# THEME SETTINGS
+theme: minima
+remote_theme: tdwg/petridish
+github_edit: false
+logo: /assets/theme/images/tdwg-logo-short.svg
 
 # BUILD SETTINGS
 markdown: kramdown
-remote_theme: tdwg/tdwg-theme-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+# FRONTMATTER DEFAULTS
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      toc: true
