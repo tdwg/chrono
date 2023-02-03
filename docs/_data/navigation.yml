@@ -1,0 +1,12 @@
+# Links listed below will be included in your site's navbar (navigation at the top)
+
+- text: Home
+  href: /
+- text: Terms
+  href: /list/
+- text: Guide
+  href: /terms/
+- text: Darwin Core
+  href: https://dwc.tdwg.org/
+- text: GitHub
+  href: https://github.com/tdwg/chrono
