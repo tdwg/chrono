@@ -10,8 +10,8 @@ The Chronometric Age extension is a standard vocabulary maintained by the [Darwi
 
 ## Getting started
 
-* [Quick reference guide](terms/)
-* Usage guide: how to use the Chronometric Age Extension (forthcoming)
-* [GitHub repository](https://github.com/tdwg/chrono): where the Chronometric Age Extensions is maintained
-* [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
-* [Utility files](https://github.com/tdwg/chrono/tree/master/dist): CSV files of vertical and horizontal term lists plus the Darwin Core Extension schema
+- [Quick Reference Guide](terms/)
+- Usage guide: how to use the Chronometric Age Extension (forthcoming)
+- [GitHub repository](https://github.com/tdwg/chrono): where the Chronometric Age Extensions is maintained
+- [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
+- [Utility files](https://github.com/tdwg/chrono/tree/master/dist): CSV files of vertical and horizontal term lists plus the Darwin Core Extension schema
