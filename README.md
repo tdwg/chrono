@@ -14,6 +14,8 @@ Documents:
 - [Complete term history table](vocabulary/term_versions.csv): A CSV file with the full version history of Chronometric Age terms
 - [Utility documents](dist/): CSV files of vertical and horizontal term lists plus the Darwin Core Extension schema
 - [Website documents](docs/): Markdown files that form the source for the [Chronometric Age Extension website](https://tdwg.github.io/chrono)
+- [Feature Report](reports/Feature%20Report.md): Document identify the features that should be included in the enhancement in order to achieve identified goals
+- [Implementation Experience Report](reports/Implementation%20Experience%20Report.md): Documentation of the experience of independent implementations with the features listed in the Feature Report
 <!-- - [Website documents](docs/): Markdown files that form the source for the [Chronometric Age Extension website](https://chrono.tdwg.org/) -->
 
 Community:
