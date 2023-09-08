@@ -1,5 +1,7 @@
 # Links listed below will be included in your site's navbar (navigation at the top)
 
+- text: Home
+  href: /
 - text: Terms
   menu:
   - text: Darwin Core
