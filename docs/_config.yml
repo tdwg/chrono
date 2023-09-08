@@ -1,7 +1,6 @@
 # SITE SETTINGS
 title: Chronometric Age Extension
 url: "https://chrono.tdwg.org"
-baseurl: "/"
 
 # SOCIAL PROFILES
 social:
