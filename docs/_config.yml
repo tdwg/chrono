@@ -1,7 +1,7 @@
 # SITE SETTINGS
 title: Chronometric Age Extension
 url: "https://chrono.tdwg.org"
-baseurl: "/"
+baseurl: "" # Otherwise GitHub Pages will set this to "/chrono"
 
 # SOCIAL PROFILES
 social:
