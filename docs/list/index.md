@@ -176,7 +176,13 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`An age range associated with a specimen derived from an AMS dating assay applied to an oyster shell in the same stratum`; `An age range associated with a specimen derived from a ceramics analysis based on other materials found in the same stratum`; `A maximum age associated with a specimen derived from K-Ar dating applied to a proximal volcanic tuff found stratigraphically below the specimen`; `An age range of a specimen based on its biostratigraphic context`; `An age of a specimen based on what is reported in legacy collections data`.</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>An age range associated with a specimen derived from an AMS dating assay applied to an oyster shell in the same stratum</code></li>
+  <li class="list-group-item"><code>An age range associated with a specimen derived from a ceramics analysis based on other materials found in the same stratum</code></li>
+  <li class="list-group-item"><code>A maximum age associated with a specimen derived from K-Ar dating applied to a proximal volcanic tuff found stratigraphically below the specimen</code></li>
+  <li class="list-group-item"><code>An age range of a specimen based on its biostratigraphic context</code></li>
+  <li class="list-group-item"><code>An age of a specimen based on what is reported in legacy collections data</code>.</li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -185,6 +191,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Class</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -222,7 +232,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`INTCAL13`, `sequential 6 phase Bayesian model and IntCal13 calibration`</td>
+			<td><code>INTCAL13</code>, <code>sequential 6 phase Bayesian model and IntCal13 calibration</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -231,6 +241,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -274,6 +288,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -310,7 +328,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Michelle LeFebvre | Neill Wallis`</td>
+			<td><code>Michelle LeFebvre | Neill Wallis</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -319,6 +337,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -362,6 +384,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -398,7 +424,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1963-03-08T14:07-0600` (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). `2009-02-20T08:40Z` (20 February 2009 8:40am UTC). `2018-08-29T15:19` (3:19pm local time on 29 August 2018). `1809-02-12` (some time during 12 February 1809). `1906-06` (some time in June 1906). `1971` (some time in the year 1971).</td>
+			<td><code>1963-03-08T14:07-0600</code> (8 Mar 1963 at 2:07pm in the time zone six hours earlier than UTC). <code>2009-02-20T08:40Z</code> (20 February 2009 8:40am UTC). <code>2018-08-29T15:19</code> (3:19pm local time on 29 August 2018). <code>1809-02-12</code> (some time during 12 February 1809). <code>1906-06</code> (some time in June 1906). <code>1971</code> (some time in the year 1971).</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -407,6 +433,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -444,7 +474,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`<a href="https://www.canadianarchaeology.ca/samples/70673`">https://www.canadianarchaeology.ca/samples/70673`</a></td>
+			<td><code><a href="https://www.canadianarchaeology.ca/samples/70673">https://www.canadianarchaeology.ca/samples/70673</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -453,6 +483,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -486,7 +520,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`radiocarbon AMS`, `K-Ar dates for the lower most marker tuff`, `historic documentation`, `ceramic seriation`</td>
+			<td><code>radiocarbon AMS</code>, <code>K-Ar dates for the lower most marker tuff</code>, <code>historic documentation</code>, <code>ceramic seriation</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -495,6 +529,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -538,6 +576,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -574,7 +616,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Pluckhahn, Thomas J., Neill J. Wallis, and Victor D. Thompson. 2020  The History and Future of Migrationist Explanation in the Archaeology of the Eastern Woodlands: A Review and Case Study of the Woodland Period Gulf Coast. Journal of Archaeological Research. <a href="https://doi.org/10.1007/s10814-019-09140-x`">https://doi.org/10.1007/s10814-019-09140-x`</a></td>
+			<td><code>Pluckhahn, Thomas J., Neill J. Wallis, and Victor D. Thompson. 2020  The History and Future of Migrationist Explanation in the Archaeology of the Eastern Woodlands: A Review and Case Study of the Woodland Period Gulf Coast. Journal of Archaeological Research. <a href="https://doi.org/10.1007/s10814-019-09140-x">https://doi.org/10.1007/s10814-019-09140-x</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -583,6 +625,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -616,7 +662,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.`</td>
+			<td><code>Beta Analytic number: 323913 | One of the Crassostrea virginica right valve specimens from North Midden Feature 17 was chosen for AMS dating, but it is unclear exactly which specimen it was.</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -625,6 +671,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -662,7 +712,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`100`</td>
+			<td><code>100</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -671,6 +721,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -714,6 +768,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -746,7 +804,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`2-sigma calibrated range`, `Half of 95% confidence interval`</td>
+			<td><code>2-sigma calibrated range</code>, <code>Half of 95% confidence interval</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -755,6 +813,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -802,6 +864,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -844,6 +910,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -880,7 +950,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`kya`,`mya`,`BP`,`AD`,`BCE`,`ka`,`Ma`,`Ga`</td>
+			<td><code>kya</code>,<code>mya</code>,<code>BP</code>,<code>AD</code>,<code>BCE</code>,<code>ka</code>,<code>Ma</code>,<code>Ga</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -889,6 +959,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -936,6 +1010,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -972,7 +1050,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`kya`,`mya`,`BP`,`AD`,`BCE`,`ka`,`Ma`,`Ga`</td>
+			<td><code>kya</code>,<code>mya</code>,<code>BP</code>,<code>AD</code>,<code>BCE</code>,<code>ka</code>,<code>Ma</code>,<code>Ga</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -981,6 +1059,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1024,6 +1106,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1066,6 +1152,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1098,7 +1188,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Double Tuff`, `Charcoal found in Stratum V`, `charred wood`, `tooth`</td>
+			<td><code>Double Tuff</code>, <code>Charcoal found in Stratum V</code>, <code>charred wood</code>, <code>tooth</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1107,6 +1197,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1140,7 +1234,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`dwc:materialSampleID: <a href="https://www.ebi.ac.uk/metagenomics/samples/SRS1930158`">https://www.ebi.ac.uk/metagenomics/samples/SRS1930158`</a></td>
+			<td><code>dwc:materialSampleID: <a href="https://www.ebi.ac.uk/metagenomics/samples/SRS1930158">https://www.ebi.ac.uk/metagenomics/samples/SRS1930158</a></code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1149,6 +1243,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1186,7 +1284,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`sameAs` (cases where the subject material was completely destructively subsampled to get the ChronometricAge), `subsampleOf` (cases where part of the original specimen was extracted as the material used to determine the ChronometricAge), `inContextWith` (cases where the ChronometricAge is inferred from materialDated, such as sediments or cultural objects, in related temporal context),`stratigraphicallyCorrelatedWith` (cases where the ChronometricAge is inferred from materialDated in a stratigraphically correlated context)</td>
+			<td><code>sameAs</code> (cases where the subject material was completely destructively subsampled to get the ChronometricAge), <code>subsampleOf</code> (cases where part of the original specimen was extracted as the material used to determine the ChronometricAge), <code>inContextWith</code> (cases where the ChronometricAge is inferred from materialDated, such as sediments or cultural objects, in related temporal context),<code>stratigraphicallyCorrelatedWith</code> (cases where the ChronometricAge is inferred from materialDated in a stratigraphically correlated context)</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1195,6 +1293,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1224,7 +1326,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Is replaced by</td>
-			<td><a href="#chrono_latestChronometricAge">http://rs.tdwg.org/chrono/terms/latestChronometricAge</a></td>
+			<td><a href="#chrono_earliestChronometricAge">http://rs.tdwg.org/chrono/terms/earliestChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1236,7 +1338,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`27`</td>
+			<td><code>27</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1245,6 +1347,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1274,7 +1380,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Is replaced by</td>
-			<td><a href="#chrono_materialDatedRelationship">http://rs.tdwg.org/chrono/terms/materialDatedRelationship</a></td>
+			<td><a href="#chrono_earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1282,7 +1388,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`kya`,`mya`,`BP`,`AD`,`BCE`</td>
+			<td><code>kya</code>,<code>mya</code>,<code>BP</code>,<code>AD</code>,<code>BCE</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1291,6 +1397,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1320,7 +1430,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Is replaced by</td>
-			<td><a href="#chrono_earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/terms/earliestChronometricAgeReferenceSystem</a></td>
+			<td><a href="#chrono_latestChronometricAge">http://rs.tdwg.org/chrono/terms/latestChronometricAge</a></td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1332,7 +1442,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`100`</td>
+			<td><code>100</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1341,6 +1451,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1378,7 +1492,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`kya`,`mya`,`BP`,`AD`,`BCE`</td>
+			<td><code>kya</code>,<code>mya</code>,<code>BP</code>,<code>AD</code>,<code>BCE</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1387,6 +1501,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1420,7 +1538,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1510 +/- 25 14C yr BP`, `16.26 Ma +/- 0.016`</td>
+			<td><code>1510 +/- 25 14C yr BP</code>, <code>16.26 Ma +/- 0.016</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1429,6 +1547,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1466,7 +1588,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`27 BC to 14 AD`, `stratigraphically pre-1104`</td>
+			<td><code>27 BC to 14 AD</code>, <code>stratigraphically pre-1104</code></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1475,6 +1597,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2021-04-27_33">http://rs.tdwg.org/decisions/decision-2021-04-27_33</a></td>
 		</tr>
 	</tbody>
 </table>
