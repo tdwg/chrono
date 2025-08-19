@@ -1,5 +1,6 @@
 # Script to build Markdown pages that provide term metadata for complex vocabularies
 # Steve Baskauf 2020-06-28 CC0
+# Modified to populate document metadata dynamically by Steve Baskauf 2025-08-19
 # This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
@@ -7,13 +8,31 @@ import requests   # best library to manage HTTP transactions
 import csv        # library to read/write/parse CSV files
 import json       # library to convert JSON to Python data structures
 import pandas as pd
+import yaml
+import sys
+
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# Branch of rs.tdwg.org repo to be used
+# "master" for production, something else for development
+# Example: First part of branch URL is "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/chrono-dev/", branch is "chrono-dev".
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
 
 # -----------------
 # Configuration section
 # -----------------
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
 
 headerFileName = 'termlist-header.md'
 footerFileName = 'termlist-footer.md'
@@ -21,6 +40,10 @@ outFileName = '../docs/list/index.md'
 
 # This is a Python list of the database names of the term lists to be included in the document.
 termLists = ['chronometricage', 'chronoiri']
+
+# If this list of terms is for terms in a single namespace, set the value of has_namespace to True. The value
+# of has_namespace should be False for a list of terms that contains multiple namespaces.
+has_namespace = False
 
 # NOTE! There may be problems unless every term list is of the same vocabulary type since the number of columns will differ
 # However, there probably aren't any circumstances where mixed types will be used to generate the same page.
@@ -32,10 +55,49 @@ organized_in_categories = True
 
 # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
 # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
-display_order = [ 'http://rs.tdwg.org/chrono/terms/ChronometricAge', 'http://tdwg.org/chrono/terms/ChronometricAge', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI']
-display_label = ['Chronometric Age', 'Chronometric Age', 'IRI-value terms']
-display_comments = ['','','']
-display_id = ['chronometric_age', 'chronometric_age', 'use_with_iri']
+display_order = [ 'http://rs.tdwg.org/chrono/terms/ChronometricAge', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI']
+display_label = ['Chronometric Age', 'IRI-value terms']
+display_comments = ['','']
+display_id = ['chronometric_age', 'use_with_iri']
+
+# ---------------
+# Load header data
+# ---------------
+
+config_file_path = 'process/document_metadata_processing/dwc_doc_chrono/'
+contributors_yaml_file = 'authors_configuration.yaml'
+document_configuration_yaml_file = 'document_configuration.yaml'
+
+if has_namespace:
+    # Load the data about the namespace from term lists metadata at rs.tdwg.org
+    term_lists_df = pd.read_csv(githubBaseUri +  'term-lists/term-lists.csv')
+    # Find the row in the term-lists.csv file that corresponds to the database.
+    term_list_row = term_lists_df.loc[term_lists_df['database'] == termLists[0]]
+    # Extract the namespace IRI and preferred namespace prefix from the row.
+    namespace_uri = term_list_row['vann_preferredNamespaceUri'].values[0]
+    pref_namespace_prefix = term_list_row['vann_preferredNamespacePrefix'].values[0]
+
+    '''
+
+    metadata_config_text = requests.get(githubBaseUri + config_file_path + 'config.yaml').text
+    metadata_config = yaml.load(metadata_config_text, Loader=yaml.FullLoader)
+    namespace_uri = metadata_config['namespaces'][0]['namespace_uri']
+    pref_namespace_prefix = metadata_config['namespaces'][0]['pref_namespace_prefix']
+    '''
+
+# Load the contributors YAML file from its GitHub URL
+contributors_yaml_url = githubBaseUri + config_file_path + contributors_yaml_file
+contributors_yaml = requests.get(contributors_yaml_url).text
+if contributors_yaml == '404: Not Found':
+    print('Contributors YAML file not found. Check the URL.')
+    print(contributors_yaml_url)
+    exit()
+contributors_yaml = yaml.load(contributors_yaml, Loader=yaml.FullLoader)
+
+# Load the document configuration YAML file from its GitHub URL
+document_configuration_yaml_url = githubBaseUri + config_file_path + document_configuration_yaml_file
+document_configuration_yaml = requests.get(document_configuration_yaml_url).text
+document_configuration_yaml = yaml.load(document_configuration_yaml, Loader=yaml.FullLoader)
 
 # ---------------
 # Function definitions
@@ -176,7 +238,7 @@ for row_index,row in terms_sorted_by_localname.iterrows():
         curie = row['pref_ns_prefix'] + ":" + row['term_localName']
         curie_anchor = curie.replace(':','_')
         text += '[' + curie + '](#' + curie_anchor + ') |\n'
-text = text[:len(text)-2] # remove final trailing vertical bar and newline
+text = text[:len(text)-3] # remove final trailing space, vertical bar, and newline
 text += '\n\n' # put back removed newline
 
 for category in range(0,len(display_order)):
@@ -193,7 +255,7 @@ for category in range(0,len(display_order)):
             curie = row['pref_ns_prefix'] + ":" + row['term_localName']
             curie_anchor = curie.replace(':','_')
             text += '[' + curie + '](#' + curie_anchor + ') |\n'
-    text = text[:len(text)-2] # remove final trailing vertical bar and newline
+    text = text[:len(text)-3] # remove final trailing space, vertical bar, and newline
     text += '\n\n' # put back removed newline
 
 index_by_name = text
@@ -213,7 +275,7 @@ for row_index,row in terms_sorted_by_label.iterrows():
     if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
         curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
         text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-text = text[:len(text)-2] # remove final trailing vertical bar and newline
+text = text[:len(text)-3] # remove final trailing space, vertical bar, and newline
 text += '\n\n' # put back removed newline
 
 for category in range(0,len(display_order)):
@@ -230,7 +292,7 @@ for category in range(0,len(display_order)):
             if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
                 curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
                 text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-    text = text[:len(text)-2] # remove final trailing vertical bar and newline
+    text = text[:len(text)-3] # remove final trailing space, vertical bar, and newline
     text += '\n\n' # put back removed newline
 
 index_by_label = text
@@ -393,6 +455,54 @@ text = index_by_name + index_by_label + term_table
 headerObject = open(headerFileName, 'rt', encoding='utf-8')
 header = headerObject.read()
 headerObject.close()
+
+# Build the Markdown for the contributors list
+contributors = ''
+for contributor in contributors_yaml:
+    contributors += '[' + contributor['contributor_literal'] + '](' + contributor['contributor_iri'] + ') '
+    contributors += '([' + contributor['affiliation'] + '](' + contributor['affiliation_uri'] + ')), '
+contributors = contributors[:-2] # Remove the last comma and space
+
+# Substitute values of ratification_date and contributors into the header template
+header = header.replace('{document_title}', document_configuration_yaml['documentTitle'])
+header = header.replace('{ratification_date}', document_configuration_yaml['doc_modified'])
+header = header.replace('{created_date}', document_configuration_yaml['doc_created'])
+header = header.replace('{contributors}', contributors)
+header = header.replace('{standard_iri}', document_configuration_yaml['dcterms_isPartOf'])
+header = header.replace('{current_iri}', document_configuration_yaml['current_iri'])
+header = header.replace('{abstract}', document_configuration_yaml['abstract'])
+header = header.replace('{creator}', document_configuration_yaml['creator'])
+header = header.replace('{publisher}', document_configuration_yaml['publisher'])
+year = document_configuration_yaml['doc_modified'].split('-')[0]
+header = header.replace('{year}', year)
+if has_namespace:
+    header = header.replace('{namespace_uri}', namespace_uri)
+    header = header.replace('{pref_namespace_prefix}', pref_namespace_prefix)
+
+# Determine whether there was a previous version of the document.
+if document_configuration_yaml['doc_created'] != document_configuration_yaml['doc_modified']:
+    # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
+    versions_data_url = githubBaseUri + 'docs/docs-versions.csv'
+    versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
+    # Slice all rows for versions of this document.
+    matching_versions = versions_list_df[versions_list_df['current_iri']==document_configuration_yaml['current_iri']]
+    # Sort the matching versions by version IRI in descending order so that the most recent version is first.
+    matching_versions = matching_versions.sort_values(by=['version_iri'], ascending=[False])
+    # The previous version is the second row in the dataframe (row 1).
+    # The version IRI is in the second column (column 1).
+    most_recent_version_iri = matching_versions.iat[1, 1]
+    #print(most_recent_version_iri)
+
+    # Insert the previous version information into the header
+    previous_version_metadata_string = '''Previous version
+: <''' + most_recent_version_iri + '''>
+
+'''
+    # Insert the previous version information into the designated slot.
+    header = header.replace('{previous_version_slot}\n\n', previous_version_metadata_string)
+else:
+    # If there was no previous version, remove the slot from the header.
+    header = header.replace('{previous_version_slot}\n\n', '')
 
 footerObject = open(footerFileName, 'rt', encoding='utf-8')
 footer = footerObject.read()
