@@ -46,7 +46,7 @@ footerFileName = 'termlist-footer.md'
 outFileName = '../docs/list/index.md'
 
 # This is a Python list of the database names of the term lists to be included in the document.
-termLists = ['humboldt', 'humboldt_iri']
+termLists = ['chronometricage', 'chronoiri']
 
 # If this list of terms is for terms in a single namespace, set the value of has_namespace to True. The value
 # of has_namespace should be False for a list of terms that contains multiple namespaces.
@@ -63,7 +63,7 @@ organized_in_categories = True
 # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
 # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
 
-display_order = [ 'http://rs.tdwg.org/dwc/terms/Event', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI']
+display_order = [ 'http://rs.tdwg.org/dwc/terms/ChronometricAge', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI']
 display_label = ['Literal-value terms', 'IRI-value terms']
 display_comments = ['','']
 display_id = ['event', 'use_with_iri']
