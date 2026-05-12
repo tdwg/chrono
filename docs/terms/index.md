@@ -296,7 +296,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">chronometricAgeConversionProtocol</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeConversionProtocol</a></td></tr>
     <tr><td>Definition</td><td>The method used to convert the chrono:uncalibratedChronometricAge into a chronometric age in years, as captured in chrono:earliestChronometricAge, chrono:earliestChronometricAgeReferenceSystem, chrono:latestChronometricAge, and chrono:latestChronometricAgeReferenceSystem.</td></tr>
-    <tr><td>Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -309,7 +309,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">chronometricAgeDeterminedBy</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy">http://rs.tdwg.org/chrono/iri/chronometricAgeDeterminedBy</a></td></tr>
     <tr><td>Definition</td><td>A person, group, or organization that determined the chrono:ChronometricAge.</td></tr>
-    <tr><td>Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -322,7 +322,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">chronometricAgeProtocol</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol">http://rs.tdwg.org/chrono/iri/chronometricAgeProtocol</a></td></tr>
     <tr><td>Definition</td><td>A method used to determine the chrono:ChronometricAge.</td></tr>
-    <tr><td>Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -335,7 +335,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">chronometricAgeUncertaintyMethod</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod">http://rs.tdwg.org/chrono/iri/chronometricAgeUncertaintyMethod</a></td></tr>
     <tr><td>Definition</td><td>The method used to generate the value of chrono:chronometricAgeUncertaintyInYears.</td></tr>
-    <tr><td>Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -348,7 +348,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">earliestChronometricAgeReferenceSystem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/earliestChronometricAgeReferenceSystem</a></td></tr>
     <tr><td>Definition</td><td>The reference system associated with the chrono:earliestChronometricAge.</td></tr>
-    <tr><td>Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -361,7 +361,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">latestChronometricAgeReferenceSystem</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem">http://rs.tdwg.org/chrono/iri/latestChronometricAgeReferenceSystem</a></td></tr>
     <tr><td>Definition</td><td>The reference system associated with the chrono:latestChronometricAge.</td></tr>
-    <tr><td>Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
@@ -374,7 +374,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     <tr class="table-secondary"><th colspan="2">materialDated</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/iri/materialDated">http://rs.tdwg.org/chrono/iri/materialDated</a></td></tr>
     <tr><td>Definition</td><td>The material on which the chrono:chronometricAgeProtocol was actually performed.</td></tr>
-    <tr><td>Comments</td><td>Terms in the chronoiri namespace are intended to be used in RDF with non-literal objects.</td></tr>
+    <tr><td>Comments</td><td>Terms in the chronoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
     <tr><td>Examples</td><td></td></tr>
   </tbody>
 </table>
