@@ -162,7 +162,7 @@ This document is intended to be an easy-to-read reference the currently recommen
   <tbody>
     <tr class="table-secondary"><th colspan="2">chronometricAgeUncertaintyInYears</th></tr>
     <tr><td>Identifier</td><td><a href="http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears">http://rs.tdwg.org/chrono/terms/chronometricAgeUncertaintyInYears</a></td></tr>
-    <tr><td>Definition</td><td>The temporal uncertainty of the chrono:earliestChronometricAge and chrono:latestChronometicAge in years.</td></tr>
+    <tr><td>Definition</td><td>The temporal uncertainty of the chrono:earliestChronometricAge and chrono:latestChronometricAge in years.</td></tr>
     <tr><td>Comments</td><td>The expected unit for this field is years. The value in this field is number of years before and after the values given in the chrono:earliestChronometricAge and chrono:latestChronometricAge fields within which the actual values are estimated to be.</td></tr>
     <tr><td>Examples</td><td><code>100</code></td></tr>
   </tbody>

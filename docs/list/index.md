@@ -3,14 +3,8 @@
 Title
 : Chronometric Age Vocabulary List of Terms
 
-Namespace IRI:
-: http://rs.tdwg.org/chrono/terms/
-
-Preferred namespace abbreviation
-: chrono:
-
 Date version issued
-: 2025-06-12
+: 2026-04-07
 
 Date created
 : 2021-04-27
@@ -19,30 +13,29 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/chrono/2025-06-12>
+: <http://rs.tdwg.org/dwc/doc/chrono/2026-04-07>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/chrono/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/chrono/2021-04-27>
+: <http://rs.tdwg.org/dwc/doc/chrono/2025-07-10>
 
 Abstract
 : The Chronometric Age Vocabulary is a standard for transmitting information about chronometric ages - the processes and results of an assay or other analysis used to determine the age of a MaterialSample. This document lists all terms in namespaces currently used in the vocabulary.
 
 Contributors
-: John Wieczorek, Laura Brenskelle, Robert Guralnick, Kitty Emery, Michelle LeFebvre, Neill Wallis, Steve Baskauf, Marie Elise Lecoq, Eric Kansa, Sarah Kansa, Denné Reed
+: [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Laura Brenskelle](https://orcid.org/0000-0002-9284-8871) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Robert Guralnick](https://orcid.org/0000-0001-6682-1504) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Kitty Emery](https://orcid.org/0000-0002-4031-1968) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Michelle LeFebvre](https://orcid.org/0000-0002-1741-9997) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Neill Wallis](https://orcid.org/0000-0003-4740-286X) ([University of Florida](http://www.wikidata.org/entity/Q501758)), [Steven J Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Marie Elise Lecoq](https://orcid.org/0000-0002-8481-9034) ([GBIF France](https://www.wikidata.org/wiki/Q1531570)), [Eric Kansa](https://orcid.org/0000-0001-5620-4764) ([Harvard University](http://www.wikidata.org/entity/Q13371)), [Sarah Kansa](https://orcid.org/0000-0001-7920-5321) ([The Alexandria Archive Institute](https://www.wikidata.org/wiki/Q30257865)), [Denné Reed](https://orcid.org/0000-0001-9325-3100) ([University of Texas at Austin](https://www.wikidata.org/wiki/Q49213))
 
 Creator
 : TDWG Darwin Core Chronometric Age Extension Task Group
 
 Bibliographic citation
-: TDWG Darwin Core Chronometric Age Extension Task Group. 2025. Chronometric Age Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/chrono/2025-06-12>
-
+: TDWG Darwin Core Chronometric Age Extension Task Group. 2026. Chronometric Age Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/chrono/2026-04-07>
 
 ## 1 Introduction
 
-This document contains all versions of terms in the Chronometric Age vocabulary (<http://rs.tdwg.org/version/chrono/2025-06-12>). The vocabulary uses the namespace abbreviation `chrono:`. Earlier term versions using the `zooarchnet:` namespace are deprecated and should no longer be used. These deprecated terms can be found at <http://rs.tdwg.org/chrono/zooarchnet/>.
+This document contains all versions of terms in the Chronometric Age vocabulary. The vocabulary uses the namespace abbreviation `chrono:`. Earlier term versions using the `zooarchnet:` namespace are deprecated and should no longer be used. These deprecated terms can be found at <http://rs.tdwg.org/chrono/zooarchnet/>.
 
 For a simplified list that contains only the currently recommended terms, see the Chronometric Age Quick Reference Guide (<https://tdwg.github.io/chrono/terms/>).
 
@@ -63,7 +56,33 @@ The terms in this standard are meant to provide stable definitions that can be u
 
 (See also [3.2 Index By Label](#32-index-by-label))
 
-**Literal-value terms**
+**Classes**
+
+[chrono:ChronometricAge](#chrono_ChronometricAge) 
+
+**Chronometric Age**
+
+[chrono:chronometricAgeConversionProtocol](#chrono_chronometricAgeConversionProtocol) |
+[chrono:chronometricAgeDeterminedBy](#chrono_chronometricAgeDeterminedBy) |
+[chrono:chronometricAgeDeterminedDate](#chrono_chronometricAgeDeterminedDate) |
+[chrono:chronometricAgeID](#chrono_chronometricAgeID) |
+[chrono:chronometricAgeProtocol](#chrono_chronometricAgeProtocol) |
+[chrono:chronometricAgeReferences](#chrono_chronometricAgeReferences) |
+[chrono:chronometricAgeRemarks](#chrono_chronometricAgeRemarks) |
+[chrono:chronometricAgeUncertaintyMethod](#chrono_chronometricAgeUncertaintyMethod) |
+[chrono:earliestChronometricAge](#chrono_earliestChronometricAge) |
+[chrono:earliestChronometricAgeReferenceSystem](#chrono_earliestChronometricAgeReferenceSystem) |
+[chrono:latestChronometricAge](#chrono_latestChronometricAge) |
+[chrono:latestChronometricAgeReferenceSystem](#chrono_latestChronometricAgeReferenceSystem) |
+[chrono:materialDated](#chrono_materialDated) |
+[chrono:materialDatedID](#chrono_materialDatedID) |
+[chrono:materialDatedRelationship](#chrono_materialDatedRelationship) |
+[chrono:maximumChronometricAge](#chrono_maximumChronometricAge) |
+[chrono:maximumChronometricAgeReferenceSystem](#chrono_maximumChronometricAgeReferenceSystem) |
+[chrono:minimumChronometricAge](#chrono_minimumChronometricAge) |
+[chrono:minimumChronometricAgeReferenceSystem](#chrono_minimumChronometricAgeReferenceSystem) |
+[chrono:uncalibratedChronometricAge](#chrono_uncalibratedChronometricAge) |
+[chrono:verbatimChronometricAge](#chrono_verbatimChronometricAge) 
 
 **IRI-value terms**
 
@@ -79,7 +98,33 @@ The terms in this standard are meant to provide stable definitions that can be u
 
 (See also [3.1 Index By Term Name](#31-index-by-term-name))
 
-**Literal-value terms**
+**Classes**
+
+[Chronometric Age](#chrono_ChronometricAge) 
+
+**Chronometric Age**
+
+[Chronometric Age Conversion Protocol](#chrono_chronometricAgeConversionProtocol) |
+[Chronometric Age Determined By](#chrono_chronometricAgeDeterminedBy) |
+[Chronometric Age Determined Date](#chrono_chronometricAgeDeterminedDate) |
+[Chronometric Age ID](#chrono_chronometricAgeID) |
+[Chronometric Age Protocol](#chrono_chronometricAgeProtocol) |
+[Chronometric Age References](#chrono_chronometricAgeReferences) |
+[Chronometric Age Remarks](#chrono_chronometricAgeRemarks) |
+[Chronometric Age Uncertainty Method](#chrono_chronometricAgeUncertaintyMethod) |
+[Earliest Chronometric Age](#chrono_earliestChronometricAge) |
+[Earliest Chronometric Age Reference System](#chrono_earliestChronometricAgeReferenceSystem) |
+[Latest Chronometric Age](#chrono_latestChronometricAge) |
+[Latest Chronometric Age Reference System](#chrono_latestChronometricAgeReferenceSystem) |
+[Material Dated](#chrono_materialDated) |
+[Material Dated ID](#chrono_materialDatedID) |
+[Material Dated Relationship](#chrono_materialDatedRelationship) |
+[Maximum Chronometric Age](#chrono_maximumChronometricAge) |
+[Maximum Chronometric Age Reference System](#chrono_maximumChronometricAgeReferenceSystem) |
+[Minimum Chronometric Age](#chrono_minimumChronometricAge) |
+[Minimum Chronometric Age Reference System](#chrono_minimumChronometricAgeReferenceSystem) |
+[Uncalibrated Chronometric Age](#chrono_uncalibratedChronometricAge) |
+[Verbatim Chronometric Age](#chrono_verbatimChronometricAge) 
 
 **IRI-value terms**
 
