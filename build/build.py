@@ -10,7 +10,6 @@ import os
 import re
 import csv
 import sys
-import codecs
 
 from urllib import request
 from jinja2 import FileSystemLoader, Environment
@@ -184,7 +183,7 @@ class DwcDigester(object):
             url = inputstring.group()
             return "<a href=\"{}\">{}</a>".format(url, url)
 
-        regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.])"
+        regx = r"(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.])"
         return re.sub(regx, _handle_matched, text_with_urls)
 
     def process_terms(self):
@@ -301,7 +300,7 @@ class DwcDigester(object):
         file_output : str
             relative path and filename to write the resulting list
         """
-        with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
+        with open(file_output, 'w', encoding='utf-8') as dwc_list_file:
             for term in self.qrg_terms():
                 dwc_list_file.write(term + "\n")
 
@@ -313,7 +312,7 @@ class DwcDigester(object):
         file_output : str
             relative path and filename to write the resulting list
         """
-        with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
+        with open(file_output, 'w', encoding='utf-8') as dwc_header_file:
             properties = self.qrg_terms()
             dwc_header_file.write(",".join(properties))
             dwc_header_file.write("\n")

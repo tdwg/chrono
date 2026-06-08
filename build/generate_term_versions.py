@@ -2,10 +2,34 @@
 # file import and configuration
 # -----------------------------
 
+import sys
 import pandas as pd
 
-# This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+# -----------------------------
+# Command line arguments
+# -----------------------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
+
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
+
+github_baseUri = (
+    'https://raw.githubusercontent.com/'
+    + github_user
+    + '/rs.tdwg.org/'
+    + github_branch
+    + '/'
+)
 
 # This is a Python list of the database names of the term version lists to be included in the document.
 term_lists = ['chronometricage','chronoiri']
